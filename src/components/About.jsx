@@ -105,7 +105,9 @@ const About = () => {
               </p>
             </div>
             <div
-              className={`bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4`}
+              className={`${
+                theme === "dark" ? "shadow__dark" : "shadow__light"
+              } bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4`}
             >
               <p className="text-center text-lg leading-8 font-semibold">
                 <span className="text-4xl font-extrabold">
@@ -120,7 +122,7 @@ const About = () => {
             className={`bg-gradient-to-br ${
               theme === "dark"
                 ? "from-red-800 to-red-900 shadow__dark"
-                : " from-red-100 to-red-800 shadow__light"
+                : " from-red-800 to-red-600 shadow__light"
             } rounded-xl w-full p-6 flex flex-col gap-8 justify-between`}
           >
             <div className="flex flex-col gap-6 md:flex-row">
