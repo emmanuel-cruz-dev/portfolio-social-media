@@ -122,7 +122,7 @@ const About = () => {
             className={`bg-gradient-to-br ${
               theme === "dark"
                 ? "from-red-800 to-red-900 shadow__dark"
-                : " from-red-800 to-red-600 shadow__light"
+                : " from-red-500 to-red-700 shadow__light"
             } rounded-xl w-full p-6 flex flex-col gap-8 justify-between`}
           >
             <div className="flex flex-col gap-6 md:flex-row">
