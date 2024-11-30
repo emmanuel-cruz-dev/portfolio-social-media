@@ -37,7 +37,9 @@ const FlipCards = () => {
                 <h3 className="font-bold text-lg">
                   {t("sections.services.cardTitle1")}
                 </h3>
-                <p>{t("sections.services.cardDescription1")}.</p>
+                <p className="text-gray-700 font-medium">
+                  {t("sections.services.cardDescription1")}.
+                </p>
               </div>
             </div>
           </div>
@@ -59,7 +61,9 @@ const FlipCards = () => {
                 <h3 className="font-bold text-lg">
                   {t("sections.services.cardTitle2")}
                 </h3>
-                <p>{t("sections.services.cardDescription2")}.</p>
+                <p className="text-gray-700 font-medium">
+                  {t("sections.services.cardDescription2")}.
+                </p>
               </div>
             </div>
           </div>
@@ -81,7 +85,9 @@ const FlipCards = () => {
                 <h3 className="font-bold text-lg">
                   {t("sections.services.cardTitle3")}
                 </h3>
-                <p>{t("sections.services.cardDescription3")}.</p>
+                <p className="text-gray-700 font-medium">
+                  {t("sections.services.cardDescription3")}.
+                </p>
               </div>
             </div>
           </div>
