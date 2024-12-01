@@ -179,7 +179,7 @@ const resources = {
         hero: {
           title: "desarrollador frontend",
           description:
-            "¡Bienvenido a la segunda versión de mi portfolio! Pensado especialmente para redes sociales. Si tenés alguna consulta, escribime a través de cualquiera de mis plataformas de contacto",
+            "¡Bienvenido a la segunda versión de mi portfolio! Pensado especialmente para redes sociales. Si tenés alguna consulta, escribime a través de mis plataformas de contacto",
           cv: "Descargar",
           email: "Copiar Email",
           emailCopied: "¡Email copiado!",
