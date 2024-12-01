@@ -185,7 +185,7 @@ const resources = {
           emailCopied: "¡Email copiado!",
         },
         about: {
-          title: "Un Poco Sobre Mi",
+          title: "Un Poco Sobre Mí",
           description:
             "Descubrí cómo mi experiencia y habilidades pueden agregar valor a tus proyectos.",
           hi: "Soy",
