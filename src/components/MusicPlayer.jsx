@@ -111,7 +111,9 @@ const MusicPlayer = () => {
   const currentSong = musicList[currentTrack];
 
   return (
-    <div className={`${isVisible ? "opacity-100" : "opacity-0"}`}>
+    <div
+      className={`hidden md:block ${isVisible ? "opacity-100" : "opacity-0"}`}
+    >
       <article className="music-player__article fixed bottom-[18px] left-2 flex gap-[6px] z-[100] select-none">
         <div
           className={`music-player__container ${
