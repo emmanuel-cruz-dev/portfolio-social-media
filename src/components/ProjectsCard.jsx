@@ -47,7 +47,7 @@ const ProjectsCard = ({
       </div>
     ),
     language: (
-      <div className="projects__item__card absolute flex flex-col items-center -top-3 -right-[3.6rem] bg-accent z-10 rotate-45 pb-1 pt-5 px-7">
+      <div className="projects__item__card absolute flex flex-col items-center -top-4 -right-[3.3rem] bg-cyan-500 z-10 rotate-45 pb-1 pt-5 px-7">
         <img
           src={idiomasLogo}
           alt="Logo de idiomas"
@@ -110,7 +110,7 @@ const ProjectsCard = ({
             </div>
             <span className="texto">{t("sections.projects.button")}</span>
           </a>
-          <a
+          {/* <a
             className="card__btn cuatro"
             href={github}
             target="_blank"
@@ -123,7 +123,7 @@ const ProjectsCard = ({
               </span>
             </div>
             <span className="texto">Github</span>
-          </a>
+          </a> */}
         </div>
       </div>
     </article>
