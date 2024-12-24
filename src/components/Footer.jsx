@@ -126,9 +126,11 @@ const Footer = () => {
       </article>
 
       <article className="flex flex-col lg:flex-row gap-8 justify-between items-center p-8 uppercase text-xs">
-        <div className="order-last lg:order-first">
+        {/* <div className="order-last lg:order-first">
           <LastModifiedDate currentLanguage={currentLanguage} />
-        </div>
+        </div> */}
+        <div className="w-[150px] flex-1 hidden md:block"></div>
+
         <div className="flex flex-col gap-8 md:gap-4">
           <ul className="footer__list flex flex-col md:flex-row text-center justify-center gap-6 font-semibold">
             <li>
@@ -151,7 +153,7 @@ const Footer = () => {
             </p>
           </AnimatedComponent>
         </div>
-        <div className="w-[150px] hidden md:block"></div>
+        <div className="w-[150px] flex-1 hidden md:block"></div>
       </article>
     </footer>
   );

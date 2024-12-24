@@ -12,7 +12,10 @@ import Song2 from "../assets/songs/song2.m4a";
 import Song3 from "../assets/songs/song3.m4a";
 import Song4 from "../assets/songs/song4.m4a";
 
-import CoverAlbum from "../assets/images/camp.jpg";
+import CampAlbum from "../assets/images/camp.jpg";
+import TheResistanceAlbum from "../assets/images/the-resistance.jpg";
+import TalkToMeAlbum from "../assets/images/talk-to-me.jpg";
+import ElCaminoAlbum from "../assets/images/el-camino.jpg";
 
 // Lista de canciones (puedes expandir esto)
 const musicList = [
@@ -20,23 +23,25 @@ const musicList = [
     title: "Les",
     artist: "Childish Gambino",
     src: `${Song1}`,
-    cover: `${CoverAlbum}`,
+    cover: `${CampAlbum}`,
   },
   {
     title: "Undisclosed Desires",
     artist: "Muse",
     src: `${Song2}`,
-    cover: `${CoverAlbum}`,
+    cover: `${TheResistanceAlbum}`,
   },
   {
     title: "Le Monde",
     artist: "Richard Carter",
     src: `${Song3}`,
-    cover: `${CoverAlbum}`,
+    cover: `${TalkToMeAlbum}`,
   },
   {
-    title: "04 Daughter",
+    title: "Lonely Boy",
+    artist: "The Black Keys",
     src: `${Song4}`,
+    cover: `${ElCaminoAlbum}`,
   },
 ];
 
@@ -107,7 +112,7 @@ const MusicPlayer = () => {
 
   return (
     <div className={`${isVisible ? "opacity-100" : "opacity-0"}`}>
-      <article className="music-player__article fixed bottom-5 left-2 flex gap-[6px] z-[100] select-none">
+      <article className="music-player__article fixed bottom-[18px] left-2 flex gap-[6px] z-[100] select-none">
         <div
           className={`music-player__container ${
             isOpen ? "active" : ""
@@ -117,7 +122,7 @@ const MusicPlayer = () => {
           <div className="flex-shrink-0 flex items-center gap-2">
             <div>
               <img
-                src={CoverAlbum}
+                src={currentSong.cover}
                 alt="Portada del álbum"
                 title={t("musicPlayer.albumCover")}
                 className="cover rounded-sm"
@@ -129,8 +134,10 @@ const MusicPlayer = () => {
 
             {/* Información de la canción */}
             <div className="music-player__text flex-grow">
-              <h3 className="text-sm font-semibold">{currentSong.title}</h3>
-              <p className="text-[12px] text-gray-400">Jinjer</p>
+              <h3 className="text-[13.25px] font-semibold">
+                {currentSong.title}
+              </h3>
+              <p className="text-[12px] text-gray-400">{currentSong.artist}</p>
             </div>
           </div>
 
