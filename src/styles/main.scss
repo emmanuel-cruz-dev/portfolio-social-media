@@ -749,7 +749,8 @@ span {
 }
 
 .music-player__container.active {
-  width: 21.2rem;
+  // width: 21.2rem;
+  width: 100%;
 
   .music-player__text {
     display: block;

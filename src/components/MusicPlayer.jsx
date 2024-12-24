@@ -116,10 +116,10 @@ const MusicPlayer = () => {
         <div
           className={`music-player__container ${
             isOpen ? "active" : ""
-          } hidden lg:flex justify-between items-center rounded-md bg-gray-800 text-white p-3`}
+          } flex flex-col gap-2 md:gap-0 md:flex-row justify-between items-center rounded-md bg-gray-800 text-white p-3`}
         >
           {/* Imagen de portada */}
-          <div className="flex-shrink-0 flex items-center gap-2">
+          <div className="flex-shrink-0 flex items-center order-last md:order-first gap-2">
             <div>
               <img
                 src={currentSong.cover}
