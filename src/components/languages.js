@@ -148,7 +148,18 @@ const resources = {
         },
         // más secciones...
       },
-      lastUpdate: "Last updated",
+      musicPlayer: {
+        albumCover: "Album Cover",
+        songTitle: "Song Title",
+        artist: "Artist",
+        prev: "Previous",
+        play: "Play",
+        pause: "Pause",
+        next: "Next",
+        expand: "Expand",
+        collapse: "Collapse",
+      },
+      lastUpdate: "Last update",
     },
   },
   es: {
@@ -297,6 +308,17 @@ const resources = {
           githubTitle: "Explorar el código fuente del proyecto",
         },
         // más secciones...
+      },
+      musicPlayer: {
+        albumCover: "Portada del álbum",
+        songTitle: "Título de la canción",
+        artist: "Artista",
+        prev: "Anterior",
+        play: "Reproducir",
+        pause: "Pausar",
+        next: "Siguiente",
+        expand: "Expandir",
+        collapse: "Contraer",
       },
       lastUpdate: "Última actualización",
     },
