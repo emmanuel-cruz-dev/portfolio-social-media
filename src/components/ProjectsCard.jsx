@@ -101,6 +101,7 @@ const ProjectsCard = ({
             href={link}
             target="_blank"
             rel="noopener noreferrer"
+            title={t("sections.projects.buttonTitle")}
           >
             <div className="icono">
               <span className="text-[1.25rem]">
@@ -114,6 +115,7 @@ const ProjectsCard = ({
             href={github}
             target="_blank"
             rel="noopener noreferrer"
+            title={t("sections.projects.githubTitle")}
           >
             <div className="icono">
               <span className="text-[1.35rem]">

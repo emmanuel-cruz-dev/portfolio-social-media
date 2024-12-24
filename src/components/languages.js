@@ -139,7 +139,12 @@ const resources = {
           button: "Visit site",
           portfolio:
             "This project showcases my ability to create responsive and efficient web interfaces, featuring dark mode options and language selection. Here you will find projects that reflect my commitment to detail, performance, and functionality in frontend development",
+          jinjer:
+            "Music artist platform inspired by the band Jinjer. The site offers a complete experience: bilingual navigation (English/Spanish) with interactive sections, including news, biographies, tour dates, discography, music player, multimedia gallery and an online store",
+          button: "Visit site",
           link: "More details",
+          buttonTitle: "Watch the live demo of the project",
+          githubTitle: "Explore the project source code",
         },
         // más secciones...
       },
@@ -284,7 +289,12 @@ const resources = {
           button: "Visitar sitio",
           portfolio:
             "Este proyecto demuestra mi habilidad para crear interfaces web responsivas y eficientes, cuenta con opciones de modo oscuro y selección de idioma. Aquí encontrarás proyectos que reflejan mi compromiso con el detalle, el rendimiento y la funcionalidad en desarrollo frontend",
+          jinjer:
+            "Plataforma de artista musical inspirada en la banda Jinjer. El sitio ofrece una experiencia completa: navegación bilingüe (inglés/español) con secciones interactivas, incluye noticias, biografías, fechas de gira, discografía, reproductor de música, galería multimedia y una tienda en línea",
+          button: "Visitar sitio",
           link: "Más detalles",
+          buttonTitle: "Ver la demo en vivo del proyecto",
+          githubTitle: "Explorar el código fuente del proyecto",
         },
         // más secciones...
       },

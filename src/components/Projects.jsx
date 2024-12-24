@@ -9,6 +9,10 @@ import CardPortfolio1 from "../assets/images/card-portfolio1.jpg";
 import CardPortfolio2 from "../assets/images/card-portfolio2.jpg";
 import CardPortfolio3 from "../assets/images/card-portfolio3.jpg";
 
+import CardJinjer1 from "../assets/images/card-jinjer1.webp";
+import CardJinjer2 from "../assets/images/card-jinjer2.webp";
+import CardJinjer3 from "../assets/images/card-jinjer3.webp";
+
 import HTMLLogo from "../assets/icons/html-logo.png";
 import CssLogo from "../assets/icons/css-logo.png";
 import JavascriptLogo from "../assets/icons/javascript-logo.png";
@@ -54,6 +58,22 @@ const Projects = () => {
     github: "https://github.com/EmmaLCruz/emmanuelcruz",
   };
 
+  const project3 = {
+    title: "Jinjer | Website",
+    description: t("sections.projects.jinjer"),
+    img1: CardJinjer1,
+    img2: CardJinjer2,
+    img3: CardJinjer3,
+    flyer: "language",
+    technologies: [
+      { name: "React", img: ReactLogo },
+      { name: "Tailwind CSS", img: TailwindLogo },
+      { name: "Sass", img: SassLogo },
+    ],
+    link: "https://jinjer.vercel.app/",
+    github: "https://github.com/EmmaLCruz/jinjer",
+  };
+
   return (
     <section
       className="scroll-top py-10 flex flex-col gap-8 w-11/12 mx-auto select-none"
@@ -73,7 +93,7 @@ const Projects = () => {
           <ProjectsCard {...project1} />
 
           {/* Proyecto 2 */}
-          {/* <ProjectsCard {...project2} /> */}
+          <ProjectsCard {...project3} />
         </div>
       </article>
     </section>
