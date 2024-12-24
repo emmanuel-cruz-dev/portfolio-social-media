@@ -8,12 +8,14 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import FlipCards from "./components/FlipCards";
 import Footer from "./components/Footer";
+import MusicPlayer from "./components/MusicPlayer";
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
+      <MusicPlayer />
       <ScrollToTopButton />
       <About />
       <Education />
