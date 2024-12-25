@@ -32,7 +32,7 @@ const Skills = () => {
   const { theme } = useTheme();
 
   return (
-    <main className="scroll-top py-10 w-11/12 mx-auto select-none" id="skills">
+    <main className="scroll-top py-10 w-10/12 mx-auto select-none" id="skills">
       <section className="flex flex-col gap-8">
         <AnimatedComponent animation="fade" delay={1}>
           <div className="text-center mb-5">
@@ -47,7 +47,7 @@ const Skills = () => {
           <article
             className={`${
               theme === "dark" ? "shadow__dark" : "shadow__light"
-            } flex flex-col gap-8 items-center w-fit mx-auto text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300`}
+            } flex flex-col gap-8 items-center w-fit text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300`}
           >
             <h4 className="font-semibold text-xl">
               {t("sections.skills.subtitle1")}
