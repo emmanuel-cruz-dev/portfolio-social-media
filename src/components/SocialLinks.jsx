@@ -11,7 +11,7 @@ const SocialLinks = () => {
     <div className="flex gap-4">
       <a
         title="Instagram"
-        className="w-8 hover:text-accent hover:scale-105 transition-all duration-500 ease-in-out"
+        className="w-7 hover:text-accent hover:scale-105 transition-all duration-500 ease-in-out"
         href="https://www.instagram.com/emmanuel_gerz/"
         target="_blank"
         rel="noopener noreferrer"
@@ -20,7 +20,7 @@ const SocialLinks = () => {
       </a>
       <a
         title="Facebook"
-        className="w-8 hover:text-accent hover:scale-105 transition-all duration-500 ease-in-out"
+        className="w-7 hover:text-accent hover:scale-105 transition-all duration-500 ease-in-out"
         href="https://www.facebook.com/profile.php?id=100010054865787"
         target="_blank"
         rel="noopener noreferrer"
@@ -29,7 +29,7 @@ const SocialLinks = () => {
       </a>
       <a
         title="Linkedin"
-        className="w-8 hover:text-accent hover:scale-105 transition-all duration-500 ease-in-out"
+        className="w-7 hover:text-accent hover:scale-105 transition-all duration-500 ease-in-out"
         href="https://www.linkedin.com/in/emmanuel-cruz-6a242430b/"
         target="_blank"
         rel="noopener noreferrer"
@@ -39,7 +39,7 @@ const SocialLinks = () => {
 
       <a
         title="Email"
-        className="w-8 hover:text-accent hover:scale-105 transition-all duration-500 ease-in-out"
+        className="w-7 hover:text-accent hover:scale-105 transition-all duration-500 ease-in-out"
         href="mailto:emmanuelgerr@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
