@@ -1,9 +1,9 @@
 import AnimatedComponent from "./AnimatedComponent";
 import { useTranslation } from "react-i18next";
 
-import CardPollosHermanos1 from "../assets/images/card-pollos-hermanos1.jpg";
-import CardPollosHermanos2 from "../assets/images/card-pollos-hermanos2.jpg";
-import CardPollosHermanos3 from "../assets/images/card-pollos-hermanos3.jpg";
+import CardPollosHermanos1 from "../assets/images/card-pollos-hermanos1.webp";
+import CardPollosHermanos2 from "../assets/images/card-pollos-hermanos2.webp";
+import CardPollosHermanos3 from "../assets/images/card-pollos-hermanos3.webp";
 
 import CardJinjer1 from "../assets/images/card-jinjer1.webp";
 import CardJinjer2 from "../assets/images/card-jinjer2.webp";
