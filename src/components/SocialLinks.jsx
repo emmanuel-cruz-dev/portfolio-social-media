@@ -30,7 +30,7 @@ const SocialLinks = () => {
       <a
         title="Linkedin"
         className="w-7 hover:text-accent hover:scale-105 transition-all duration-500 ease-in-out"
-        href="https://www.linkedin.com/in/emmanuel-cruz-6a242430b/"
+        href="https://www.linkedin.com/in/emmanuel-cruz-dev/"
         target="_blank"
         rel="noopener noreferrer"
       >
