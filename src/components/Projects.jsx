@@ -5,10 +5,6 @@ import CardPollosHermanos1 from "../assets/images/card-pollos-hermanos1.jpg";
 import CardPollosHermanos2 from "../assets/images/card-pollos-hermanos2.jpg";
 import CardPollosHermanos3 from "../assets/images/card-pollos-hermanos3.jpg";
 
-import CardPortfolio1 from "../assets/images/card-portfolio1.jpg";
-import CardPortfolio2 from "../assets/images/card-portfolio2.jpg";
-import CardPortfolio3 from "../assets/images/card-portfolio3.jpg";
-
 import CardJinjer1 from "../assets/images/card-jinjer1.webp";
 import CardJinjer2 from "../assets/images/card-jinjer2.webp";
 import CardJinjer3 from "../assets/images/card-jinjer3.webp";
@@ -97,14 +93,9 @@ const Projects = () => {
       </AnimatedComponent>
       <article>
         <div className="card-container flex flex-wrap gap-12 mx-auto">
-          {/* Proyecto 1 */}
-          {/* <ProjectsCard {...project1} /> */}
-
-          {/* Proyecto 2 */}
-          {/* <ProjectsCard {...project3} /> */}
 
           {projects.map((project) => 
-          <ProjectsCard {...project} />
+          <ProjectsCard key={project.id} {...project} />
           )}
         </div>
       </article>
