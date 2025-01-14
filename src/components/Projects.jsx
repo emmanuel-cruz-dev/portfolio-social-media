@@ -13,9 +13,9 @@ import CardJinjer1 from "../assets/images/card-jinjer1.webp";
 import CardJinjer2 from "../assets/images/card-jinjer2.webp";
 import CardJinjer3 from "../assets/images/card-jinjer3.webp";
 
-import CardLiterarium1 from "../assets/images/card-literarium1.jpg";
-import CardLiterarium2 from "../assets/images/card-literarium2.jpg";
-import CardLiterarium3 from "../assets/images/card-literarium3.jpg";
+import CardLiterarium1 from "../assets/images/card-literarium1.webp";
+import CardLiterarium2 from "../assets/images/card-literarium2.webp";
+import CardLiterarium3 from "../assets/images/card-literarium3.webp";
 
 import HTMLLogo from "../assets/icons/html-logo.png";
 import CssLogo from "../assets/icons/css-logo.png";
@@ -81,55 +81,6 @@ const Projects = () => {
     github: "https://github.com/EmmaLCruz/jinjer",
     }
   ];
-
-  const project1 = {
-    title: "Los Pollos Hermanos",
-    description: t("sections.projects.pollos"),
-    img1: CardPollosHermanos1,
-    img2: CardPollosHermanos2,
-    img3: CardPollosHermanos3,
-    flyer: "responsive",
-    technologies: [
-      { name: "HTML", img: HTMLLogo },
-      { name: "CSS", img: CssLogo },
-      { name: "Javascript", img: JavascriptLogo },
-      { name: "Jquery", img: JqueryLogo },
-    ],
-    link: "https://emmalcruz.github.io/los-pollos-hermanos-website/",
-    github: "https://github.com/EmmaLCruz/los-pollos-hermanos-website",
-  };
-
-  const project2 = {
-    title: "Emmanuel Cruz | Portfolio",
-    description: t("sections.projects.portfolio"),
-    img1: CardPortfolio1,
-    img2: CardPortfolio2,
-    img3: CardPortfolio3,
-    flyer: "dark",
-    technologies: [
-      { name: "React", img: ReactLogo },
-      { name: "Tailwind CSS", img: TailwindLogo },
-      { name: "Sass", img: SassLogo },
-    ],
-    link: "https://emmanuel-cruz.netlify.app/",
-    github: "https://github.com/EmmaLCruz/emmanuelcruz",
-  };
-
-  const project3 = {
-    title: "Jinjer | Website",
-    description: t("sections.projects.jinjer"),
-    img1: CardJinjer1,
-    img2: CardJinjer2,
-    img3: CardJinjer3,
-    flyer: "language",
-    technologies: [
-      { name: "React", img: ReactLogo },
-      { name: "Tailwind CSS", img: TailwindLogo },
-      { name: "Sass", img: SassLogo },
-    ],
-    link: "https://jinjer.vercel.app/",
-    github: "https://github.com/EmmaLCruz/jinjer",
-  };
 
   return (
     <section
