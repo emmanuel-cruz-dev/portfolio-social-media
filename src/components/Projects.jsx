@@ -41,8 +41,8 @@ const Projects = () => {
         { name: "Javascript", img: JavascriptLogo },
         { name: "Jquery", img: JqueryLogo },
       ],
-      link: "https://emmalcruz.github.io/los-pollos-hermanos-website/",
-      github: "https://github.com/EmmaLCruz/los-pollos-hermanos-website",
+      link: "https://emmanuel-cruz-dev.github.io/los-pollos-hermanos-website/",
+      github: "https://github.com/emmanuel-cruz-dev/los-pollos-hermanos-website",
     },
     {
       id: 2,
