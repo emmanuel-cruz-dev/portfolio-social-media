@@ -22,8 +22,9 @@ const Footer = () => {
               alt="Logo de Emmanuel Cruz,el cual es una letra e entre corchetes"
               loading="lazy"
             />
-            {/* <p className="text-sm whitespace-nowrap">"{t("footer.phrase")}."</p> */}
-            <p className="text-sm whitespace-nowrap">{t("footer.phrase")}</p>
+            <p className="text-sm whitespace-nowrap">
+              &quot;{t("footer.phrase")}.&quot;
+            </p>
           </div>
           <SocialLinks />
         </div>
