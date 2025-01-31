@@ -200,10 +200,6 @@ span {
 
   &--red {
     background-color: $color-accent;
-
-    &:hover {
-      // background-color: #000;
-    }
   }
 
   &.uno::after {

@@ -5,13 +5,11 @@ import freeCodeCampLogo from "../assets/images/freecodecamp-logo.jpg";
 import PlatziLogo from "../assets/images/platzi-logo.jpg";
 import FoodieLogo from "../assets/images/foodie-logo.jpg";
 import BaristasLogo from "../assets/images/baristas-logo.jpg";
-import LastModifiedDate from "./LastModifiedDate";
 import SocialLinks from "./SocialLinks";
 import AnimatedComponent from "./AnimatedComponent";
 
 const Footer = () => {
-  const { i18n, t } = useTranslation();
-  const currentLanguage = i18n.language === "es" ? "es" : "en";
+  const { t } = useTranslation();
 
   return (
     <footer className="footer text-white select-none" id="contact">
@@ -24,7 +22,8 @@ const Footer = () => {
               alt="Logo de Emmanuel Cruz,el cual es una letra e entre corchetes"
               loading="lazy"
             />
-            <p className="text-sm whitespace-nowrap">"{t("footer.phrase")}."</p>
+            {/* <p className="text-sm whitespace-nowrap">"{t("footer.phrase")}."</p> */}
+            <p className="text-sm whitespace-nowrap">{t("footer.phrase")}</p>
           </div>
           <SocialLinks />
         </div>
@@ -126,10 +125,6 @@ const Footer = () => {
       </article>
 
       <article className="flex justify-center items-center p-8 uppercase text-xs">
-        {/* <div className="order-last lg:order-first">
-          <LastModifiedDate currentLanguage={currentLanguage} />
-        </div> */}
-
         <div className="flex flex-col gap-8 md:gap-4">
           <ul className="footer__list flex flex-col md:flex-row text-center justify-center gap-6 font-semibold">
             <li>
