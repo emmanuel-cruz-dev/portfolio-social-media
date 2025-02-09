@@ -45,7 +45,7 @@ const Hero = () => {
           </figure>
         </AnimatedComponent>
 
-        <div className="sm:hidden">
+        <div className="sm:hidden z-50">
           <Links />
         </div>
       </article>

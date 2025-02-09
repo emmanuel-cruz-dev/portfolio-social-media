@@ -120,9 +120,11 @@ const MusicPlayer = () => {
 
   return (
     <div
-      className={`hidden md:block ${isVisible ? "opacity-100" : "opacity-0"}`}
+      className={`hidden md:block ${
+        isVisible ? "opacity-100" : "translate-x-full opacity-0"
+      } overflow-hidden`}
     >
-      <article className="music-player__article fixed bottom-[18px] left-2 flex gap-[6px] z-[100] select-none">
+      <article className="music-player__article fixed bottom-[18px] left-2 flex gap-[6px] select-none">
         <div
           className={`music-player__container ${
             isOpen ? "active" : ""

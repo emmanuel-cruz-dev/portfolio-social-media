@@ -723,6 +723,10 @@ span {
 
 // --- Inicio: Music Player --- //
 
+.music-player__article {
+  z-index: 100;
+}
+
 .music-player__container {
   width: 4.87rem;
   overflow: hidden;
