@@ -11,9 +11,11 @@ import Song1 from "../assets/songs/song1.m4a";
 import Song2 from "../assets/songs/song2.m4a";
 import Song3 from "../assets/songs/song3.m4a";
 import Song4 from "../assets/songs/song4.m4a";
+import Song5 from "../assets/songs/song5.m4a";
 
 import CampAlbum from "../assets/images/camp.jpg";
 import TheResistanceAlbum from "../assets/images/the-resistance.jpg";
+import SuperunknownAlbum from "../assets/images/superunknown.jpg";
 import TalkToMeAlbum from "../assets/images/talk-to-me.jpg";
 import ElCaminoAlbum from "../assets/images/el-camino.jpg";
 
@@ -32,15 +34,21 @@ const musicList = [
     cover: `${TheResistanceAlbum}`,
   },
   {
+    title: "The Day I Tried To Live",
+    artist: "Soundgarden",
+    src: `${Song3}`,
+    cover: `${SuperunknownAlbum}`,
+  },
+  {
     title: "Le Monde",
     artist: "Richard Carter",
-    src: `${Song3}`,
+    src: `${Song4}`,
     cover: `${TalkToMeAlbum}`,
   },
   {
     title: "Lonely Boy",
     artist: "The Black Keys",
-    src: `${Song4}`,
+    src: `${Song5}`,
     cover: `${ElCaminoAlbum}`,
   },
 ];
