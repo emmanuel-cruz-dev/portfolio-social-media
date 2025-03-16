@@ -9,9 +9,10 @@ import { useTranslation } from "react-i18next";
 
 import Song1 from "../assets/songs/song1.m4a";
 import Song2 from "../assets/songs/song2.m4a";
-import Song3 from "../assets/songs/song3.m4a";
+import Song3 from "../assets/songs/song3.mp3";
 import Song4 from "../assets/songs/song4.m4a";
 import Song5 from "../assets/songs/song5.m4a";
+import Song6 from "../assets/songs/song6.m4a";
 
 import CampAlbum from "../assets/images/camp.jpg";
 import TheResistanceAlbum from "../assets/images/the-resistance.jpg";
