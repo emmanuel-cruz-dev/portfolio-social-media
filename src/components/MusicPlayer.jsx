@@ -28,36 +28,42 @@ const musicList = [
     artist: "Childish Gambino",
     src: `${Song1}`,
     cover: `${CampAlbum}`,
+    album: "Camp",
   },
   {
     title: "Undisclosed Desires",
     artist: "Muse",
     src: `${Song2}`,
     cover: `${TheResistanceAlbum}`,
+    album: "The Resistance",
   },
   {
     title: "Portrait #1",
     artist: "Twelve Foot Ninja",
     src: `${Song3}`,
     cover: `${NewDawn}`,
+    album: "New Dawn",
   },
   {
     title: "The Day I Tried To Live",
     artist: "Soundgarden",
     src: `${Song4}`,
     cover: `${SuperunknownAlbum}`,
+    album: "Superunknown",
   },
   {
     title: "Le Monde",
     artist: "Richard Carter",
     src: `${Song5}`,
     cover: `${TalkToMeAlbum}`,
+    album: "Talk to Me",
   },
   {
     title: "Lonely Boy",
     artist: "The Black Keys",
     src: `${Song6}`,
     cover: `${ElCaminoAlbum}`,
+    album: "El Camino",
   },
 ];
 
@@ -144,7 +150,10 @@ const MusicPlayer = () => {
               <img
                 src={currentSong.cover}
                 alt="Portada del álbum"
-                title={t("musicPlayer.albumCover")}
+                //title={t("musicPlayer.albumCover")}
+                title={`${t("musicPlayer.albumCover")} - "${
+                  currentSong.album
+                }"`}
                 className="cover rounded-sm"
                 width="400"
                 height="400"
