@@ -151,9 +151,7 @@ const MusicPlayer = () => {
                 src={currentSong.cover}
                 alt="Portada del álbum"
                 //title={t("musicPlayer.albumCover")}
-                title={`${t("musicPlayer.albumCover")} - "${
-                  currentSong.album
-                }"`}
+                title={`${t("musicPlayer.albumCover")} "${currentSong.album}"`}
                 className="cover rounded-sm"
                 width="400"
                 height="400"
