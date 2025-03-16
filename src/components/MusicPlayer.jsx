@@ -19,6 +19,7 @@ import TheResistanceAlbum from "../assets/images/the-resistance.jpg";
 import SuperunknownAlbum from "../assets/images/superunknown.jpg";
 import TalkToMeAlbum from "../assets/images/talk-to-me.jpg";
 import ElCaminoAlbum from "../assets/images/el-camino.jpg";
+import NewDawn from "../assets/images/new-dawn.jpg";
 
 // Lista de canciones (puedes expandir esto)
 const musicList = [
@@ -35,21 +36,27 @@ const musicList = [
     cover: `${TheResistanceAlbum}`,
   },
   {
+    title: "Portrait #1",
+    artist: "Twelve Foot Ninja",
+    src: `${Song3}`,
+    cover: `${NewDawn}`,
+  },
+  {
     title: "The Day I Tried To Live",
     artist: "Soundgarden",
-    src: `${Song3}`,
+    src: `${Song4}`,
     cover: `${SuperunknownAlbum}`,
   },
   {
     title: "Le Monde",
     artist: "Richard Carter",
-    src: `${Song4}`,
+    src: `${Song5}`,
     cover: `${TalkToMeAlbum}`,
   },
   {
     title: "Lonely Boy",
     artist: "The Black Keys",
-    src: `${Song5}`,
+    src: `${Song6}`,
     cover: `${ElCaminoAlbum}`,
   },
 ];
