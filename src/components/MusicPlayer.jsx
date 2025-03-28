@@ -13,6 +13,7 @@ import Song3 from "../assets/songs/song3.mp3";
 import Song4 from "../assets/songs/song4.m4a";
 import Song5 from "../assets/songs/song5.m4a";
 import Song6 from "../assets/songs/song6.m4a";
+import Song7 from "../assets/songs/song7.m4a";
 
 import CampAlbum from "../assets/images/camp.jpg";
 import TheResistanceAlbum from "../assets/images/the-resistance.jpg";
@@ -20,6 +21,7 @@ import SuperunknownAlbum from "../assets/images/superunknown.jpg";
 import TalkToMeAlbum from "../assets/images/talk-to-me.jpg";
 import ElCaminoAlbum from "../assets/images/el-camino.jpg";
 import NewDawn from "../assets/images/new-dawn.jpg";
+import SheWantsRevenge from "../assets/images/sheWantsRevenge.jpg";
 
 // Lista de canciones (puedes expandir esto)
 const musicList = [
@@ -64,6 +66,13 @@ const musicList = [
     src: `${Song6}`,
     cover: `${ElCaminoAlbum}`,
     album: "El Camino",
+  },
+  {
+    title: "Tear You Apart",
+    artist: "She Wants Revenge",
+    src: `${Song7}`,
+    cover: `${SheWantsRevenge}`,
+    album: "She Wants Revenge",
   },
 ];
 
