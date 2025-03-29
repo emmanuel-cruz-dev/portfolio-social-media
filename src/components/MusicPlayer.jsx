@@ -6,11 +6,11 @@ import {
 } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
 import useMusicPlayer from "../hook/useMusicPlayer";
+import useVisibility from "../hook/useVisibility";
 
 function MusicPlayer() {
   const { t } = useTranslation();
   const {
-    isVisible,
     isOpen,
     handlePrevious,
     isPlaying,
@@ -20,6 +20,7 @@ function MusicPlayer() {
     currentSong,
     handleOpenMusicPlayer,
   } = useMusicPlayer();
+  const { isVisible } = useVisibility();
 
   return (
     <div

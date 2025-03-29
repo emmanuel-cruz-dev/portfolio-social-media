@@ -4,12 +4,12 @@ import EmailCopyButton from "./EmailCopyButton";
 import SocialLinks from "./SocialLinks";
 import AnimatedComponent from "./AnimatedComponent";
 
-const Links = () => {
+function Links() {
   const { t } = useTranslation();
   const { theme } = useTheme();
 
   return (
-    <div className="flex flex-col gap-5 md:gap-10">
+    <article className="flex flex-col gap-5 md:gap-10">
       <AnimatedComponent delay={2} animation="slide" direction="left">
         <p
           className={`${
@@ -27,8 +27,8 @@ const Links = () => {
           </div>
         </div>
       </AnimatedComponent>
-    </div>
+    </article>
   );
-};
+}
 
 export default Links;

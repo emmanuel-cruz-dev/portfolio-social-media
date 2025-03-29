@@ -1,33 +1,9 @@
-import { useState, useEffect } from "react";
-import { useTheme } from "./ThemeContext";
+import useVisibility from "../../hook/useVisibility";
+import { useTheme } from "../ThemeContext";
 
 function ScrollToTopButton() {
-  const [isVisible, setIsVisible] = useState(false);
-  const [progress, setProgress] = useState(0);
+  const { isVisible, progress } = useVisibility();
   const { theme } = useTheme();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-      const scrollHeight =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-      const newProgress = scrollTop / scrollHeight;
-      setProgress(newProgress);
-
-      if (newProgress > 0.03) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });

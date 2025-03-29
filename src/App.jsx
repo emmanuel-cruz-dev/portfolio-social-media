@@ -1,7 +1,7 @@
 import "./styles/main.scss";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import ScrollToTopButton from "./components/ScrollToTopButton";
+import ScrollToTopButton from "./components/ui/ScrollToTopButton";
 import About from "./components/About";
 import Education from "./components/Education";
 import Projects from "./components/Projects";

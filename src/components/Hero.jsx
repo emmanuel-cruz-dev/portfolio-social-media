@@ -4,7 +4,7 @@ import picture from "../assets/images/img-profile.jpg";
 import Links from "./Links";
 import AnimatedComponent from "./AnimatedComponent";
 
-const Hero = () => {
+function Hero() {
   const { t } = useTranslation();
   const { theme } = useTheme();
 
@@ -51,6 +51,6 @@ const Hero = () => {
       </article>
     </section>
   );
-};
+}
 
 export default Hero;
