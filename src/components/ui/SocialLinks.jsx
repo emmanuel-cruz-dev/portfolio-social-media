@@ -5,9 +5,9 @@ import {
   FaPaperPlane,
 } from "react-icons/fa";
 
-const SocialLinks = () => {
+function SocialLinks() {
   return (
-    <div className="flex gap-4">
+    <article className="flex gap-4">
       <a
         title="Instagram"
         className="w-7 hover:text-accent hover:scale-105 transition-all duration-500 ease-in-out"
@@ -45,8 +45,8 @@ const SocialLinks = () => {
       >
         <FaPaperPlane className="w-full h-full" />
       </a>
-    </div>
+    </article>
   );
-};
+}
 
 export default SocialLinks;

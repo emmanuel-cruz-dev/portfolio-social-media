@@ -1,4 +1,4 @@
-import AnimatedComponent from "../../components/AnimatedComponent";
+import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import { useTranslation } from "react-i18next";
 import EducationCards from "./EducationCards";
 import { educationCertificates } from "../../data/educationCertificates";

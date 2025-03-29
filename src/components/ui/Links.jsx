@@ -1,4 +1,4 @@
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 import { useTranslation } from "react-i18next";
 import EmailCopyButton from "./EmailCopyButton";
 import SocialLinks from "./SocialLinks";

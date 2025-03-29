@@ -1,7 +1,7 @@
-import AnimatedComponent from "../../components/AnimatedComponent";
+import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import { useTheme } from "../../context/ThemeContext";
 import { useTranslation } from "react-i18next";
-import Gallery from "../../components/Gallery";
+import Gallery from "../../components/ui/Gallery";
 import { certificatesItems } from "../../data/certificatesItems";
 import useGallery from "../../hook/useGallery";
 

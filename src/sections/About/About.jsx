@@ -1,4 +1,4 @@
-import AnimatedComponent from "../../components/AnimatedComponent";
+import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import { useTranslation } from "react-i18next";
 import Logo from "../../assets/icons/logo-negro.png";
 import Screens from "../../assets/images/responsive-screens.png";

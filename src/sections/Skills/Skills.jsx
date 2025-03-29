@@ -1,5 +1,5 @@
 import { useTheme } from "../../context/ThemeContext";
-import AnimatedComponent from "../../components/AnimatedComponent";
+import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import { useTranslation } from "react-i18next";
 
 import HTMLLogo from "../../assets/icons/html-logo.png";

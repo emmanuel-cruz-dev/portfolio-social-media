@@ -5,8 +5,8 @@ import freeCodeCampLogo from "../../../assets/images/freecodecamp-logo.jpg";
 import PlatziLogo from "../../../assets/images/platzi-logo.jpg";
 import FoodieLogo from "../../../assets/images/foodie-logo.jpg";
 import BaristasLogo from "../../../assets/images/baristas-logo.jpg";
-import SocialLinks from "../../SocialLinks";
-import AnimatedComponent from "../../AnimatedComponent";
+import SocialLinks from "../../ui/SocialLinks";
+import AnimatedComponent from "../../ui/AnimatedComponent";
 
 function Footer() {
   const { t } = useTranslation();

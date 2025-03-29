@@ -5,8 +5,8 @@ import {
   FaBackwardStep,
 } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
-import useMusicPlayer from "../hook/useMusicPlayer";
-import useVisibility from "../hook/useVisibility";
+import useMusicPlayer from "../../hook/useMusicPlayer";
+import useVisibility from "../../hook/useVisibility";
 
 function MusicPlayer() {
   const { t } = useTranslation();

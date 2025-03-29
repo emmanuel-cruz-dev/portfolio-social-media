@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import ProjectsCard from "./ProjectsCard";
 import { projectsItems } from "../../data/projectsItems";
-import AnimatedComponent from "../../components/AnimatedComponent";
+import AnimatedComponent from "../../components/ui/AnimatedComponent";
 
 function Projects() {
   const { t } = useTranslation();

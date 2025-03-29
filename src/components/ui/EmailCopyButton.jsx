@@ -1,8 +1,8 @@
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const EmailCopyButton = () => {
+function EmailCopyButton() {
   const { t } = useTranslation();
   const { theme } = useTheme();
   const email = "emmanuelgerr@gmail.com";
@@ -33,6 +33,6 @@ const EmailCopyButton = () => {
       </span>
     </button>
   );
-};
+}
 
 export default EmailCopyButton;

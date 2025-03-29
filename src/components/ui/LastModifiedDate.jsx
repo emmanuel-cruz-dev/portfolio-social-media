@@ -19,10 +19,10 @@ const LastModifiedDate = ({ currentLanguage }) => {
     // Intenta importar buildInfo.json, si falla usa la fecha actual
     const getLastModified = async () => {
       try {
-        const buildInfo = await import("../buildInfo.json");
+        const buildInfo = await import("../../buildInfo.json");
         return new Date(buildInfo.lastModified);
       } catch (error) {
-        console.log("Using current date for development");
+        console.log("Using current date for development", error);
         return new Date();
       }
     };

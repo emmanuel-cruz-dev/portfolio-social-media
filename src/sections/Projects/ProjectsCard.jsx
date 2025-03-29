@@ -1,5 +1,5 @@
 import { FaGlobe } from "react-icons/fa";
-import Carousel from "../../components/Carousel";
+import Carousel from "../../components/ui/Carousel";
 import { useTranslation } from "react-i18next";
 import ResponsiveLogo from "../../assets/icons/responsiveweb-card-logo.png";
 import DarkMode from "../../assets/icons/darkmode-logo.png";

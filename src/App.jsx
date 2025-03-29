@@ -7,7 +7,7 @@ import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
 import FlipCards from "./sections/FlipCards/FlipCards";
 import Footer from "./components/layout/Footer/Footer";
-import MusicPlayer from "./components/MusicPlayer";
+import MusicPlayer from "./components/ui/MusicPlayer";
 import About from "./sections/About/About";
 
 function App() {

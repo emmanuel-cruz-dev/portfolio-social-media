@@ -54,7 +54,7 @@ const Toast = ({ message, type, show, onClose }) => {
 
   return (
     show && (
-      <div className="toast-container">
+      <article className="toast-container">
         <div
           className={`toast select-none ${
             isEntering
@@ -77,7 +77,7 @@ const Toast = ({ message, type, show, onClose }) => {
             style={{ width: `${progress}%`, backgroundColor: iconColor }}
           ></div>
         </div>
-      </div>
+      </article>
     )
   );
 };
