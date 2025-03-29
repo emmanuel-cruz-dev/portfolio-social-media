@@ -1,10 +1,10 @@
-import { useTheme } from "./ThemeContext";
-import { FaGithub, FaGlobe } from "react-icons/fa";
-import Carousel from "./Carousel";
+import { FaGlobe } from "react-icons/fa";
+import Carousel from "../../components/Carousel";
 import { useTranslation } from "react-i18next";
-import ResponsiveLogo from "../assets/icons/responsiveweb-card-logo.png";
-import DarkMode from "../assets/icons/darkmode-logo.png";
-import idiomasLogo from "../assets/icons/idiomas-logo.png";
+import ResponsiveLogo from "../../assets/icons/responsiveweb-card-logo.png";
+import DarkMode from "../../assets/icons/darkmode-logo.png";
+import idiomasLogo from "../../assets/icons/idiomas-logo.png";
+import { useTheme } from "../../context/ThemeContext";
 
 const ProjectsCard = ({
   title,
@@ -15,7 +15,6 @@ const ProjectsCard = ({
   flyer,
   technologies,
   link,
-  github,
 }) => {
   const { t } = useTranslation();
   const { theme } = useTheme();
@@ -110,20 +109,6 @@ const ProjectsCard = ({
             </div>
             <span className="texto">{t("sections.projects.button")}</span>
           </a>
-          {/* <a
-            className="card__btn cuatro"
-            href={github}
-            target="_blank"
-            rel="noopener noreferrer"
-            title={t("sections.projects.githubTitle")}
-          >
-            <div className="icono">
-              <span className="text-[1.35rem]">
-                <FaGithub />
-              </span>
-            </div>
-            <span className="texto">Github</span>
-          </a> */}
         </div>
       </div>
     </article>

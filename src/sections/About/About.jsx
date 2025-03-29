@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import Logo from "../../assets/icons/logo-negro.png";
 import Screens from "../../assets/images/responsive-screens.png";
 import Background from "../../assets/images/front_end-background.webp";
-import { useTheme } from "../../components/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 
 function About() {
   const { t } = useTranslation();

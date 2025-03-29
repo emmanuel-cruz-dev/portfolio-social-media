@@ -1,6 +1,6 @@
 import useVisibility from "../../hook/useVisibility";
 import { scrollToTop } from "../../utils/utils";
-import { useTheme } from "../ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 
 function ScrollToTopButton() {
   const { isVisible, progress } = useVisibility();

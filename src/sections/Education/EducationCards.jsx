@@ -1,5 +1,5 @@
 import AnimatedComponent from "../../components/AnimatedComponent";
-import { useTheme } from "../../components/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 import { useTranslation } from "react-i18next";
 import Gallery from "../../components/Gallery";
 import { certificatesItems } from "../../data/certificatesItems";
