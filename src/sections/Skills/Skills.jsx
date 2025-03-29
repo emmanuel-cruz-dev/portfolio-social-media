@@ -1,33 +1,32 @@
-import { useTheme } from "./ThemeContext";
-
-import AnimatedComponent from "./AnimatedComponent";
+import { useTheme } from "../../components/ThemeContext";
+import AnimatedComponent from "../../components/AnimatedComponent";
 import { useTranslation } from "react-i18next";
 
-import HTMLLogo from "../assets/icons/html-logo.png";
-import CssLogo from "../assets/icons/css-logo.png";
-import JavascriptLogo from "../assets/icons/javascript-logo.png";
-import TypescriptLogo from "../assets/icons/typescript-logo.png";
-import ReactLogo from "../assets/icons/react-logo.png";
-import NodeLogo from "../assets/icons/nodejs-logo.png";
-import SassLogo from "../assets/icons/sass-logo.png";
-import GitLogo from "../assets/icons/git-logo.png";
+import HTMLLogo from "../../assets/icons/html-logo.png";
+import CssLogo from "../../assets/icons/css-logo.png";
+import JavascriptLogo from "../../assets/icons/javascript-logo.png";
+import TypescriptLogo from "../../assets/icons/typescript-logo.png";
+import ReactLogo from "../../assets/icons/react-logo.png";
+import NodeLogo from "../../assets/icons/nodejs-logo.png";
+import SassLogo from "../../assets/icons/sass-logo.png";
+import GitLogo from "../../assets/icons/git-logo.png";
 
-import TailwindLogo from "../assets/icons/tailwindcss-logo.png";
-import BootstrapLogo from "../assets/icons/bootstrap-logo.png";
+import TailwindLogo from "../../assets/icons/tailwindcss-logo.png";
+import BootstrapLogo from "../../assets/icons/bootstrap-logo.png";
 
-import VsCodeLogo from "../assets/icons/vscode-logo.png";
-import GithubLogo from "../assets/icons/github-logo.png";
+import VsCodeLogo from "../../assets/icons/vscode-logo.png";
+import GithubLogo from "../../assets/icons/github-logo.png";
 
-import FigmaLogo from "../assets/icons/figma-logo.png";
-import PhotoshopLogo from "../assets/icons/photoshop-logo.png";
-import WebflowLogo from "../assets/icons/webflow-logo.png";
+import FigmaLogo from "../../assets/icons/figma-logo.png";
+import PhotoshopLogo from "../../assets/icons/photoshop-logo.png";
+import WebflowLogo from "../../assets/icons/webflow-logo.png";
 
-import MobileFirstLogo from "../assets/icons/mobilefirst-logo.png";
-import ResponsiveLogo from "../assets/icons/responsive-logo.png";
-import BemLogo from "../assets/icons/bem-logo.png";
+import MobileFirstLogo from "../../assets/icons/mobilefirst-logo.png";
+import ResponsiveLogo from "../../assets/icons/responsive-logo.png";
+import BemLogo from "../../assets/icons/bem-logo.png";
 import SkillsCard from "./SkillsCard";
 
-const Skills = () => {
+function Skills() {
   const { t } = useTranslation();
   const { theme } = useTheme();
 
@@ -215,6 +214,6 @@ const Skills = () => {
       </section>
     </main>
   );
-};
+}
 
 export default Skills;

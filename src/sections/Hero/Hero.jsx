@@ -1,8 +1,8 @@
-import { useTheme } from "./ThemeContext";
+import { useTheme } from "../../components/ThemeContext";
 import { useTranslation } from "react-i18next";
-import picture from "../assets/images/img-profile.jpg";
-import Links from "./Links";
-import AnimatedComponent from "./AnimatedComponent";
+import picture from "../../assets/images/img-profile.jpg";
+import Links from "../../components/Links";
+import AnimatedComponent from "../../components/AnimatedComponent";
 
 function Hero() {
   const { t } = useTranslation();
