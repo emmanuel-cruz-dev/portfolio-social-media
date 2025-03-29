@@ -1,16 +1,9 @@
-import AnimatedComponent from "./AnimatedComponent";
-import { useTheme } from "./ThemeContext";
-import { useState } from "react";
+import AnimatedComponent from "../../components/AnimatedComponent";
+import { useTheme } from "../../components/ThemeContext";
 import { useTranslation } from "react-i18next";
-
-import PlatziTituloGrande from "../assets/images/platzi.jpg";
-import JavascriptGrande from "../assets/images/freecodecamp-javascript.jpg";
-import ResponsiveGrande from "../assets/images/freecodecamp-responsive.jpg";
-import HTMLCSSTituloGrande from "../assets/images/html-css.jpg";
-import UXResearchTituloGrande from "../assets/images/ux-research.jpg";
-import NucbaTituloGrande from "../assets/images/nucba.jpg";
-
-import Gallery from "./Gallery";
+import Gallery from "../../components/Gallery";
+import { certificatesItems } from "../../data/certificatesItems";
+import useGallery from "../../hook/useGallery";
 
 const EducationCards = ({
   img,
@@ -24,27 +17,8 @@ const EducationCards = ({
 }) => {
   const { theme } = useTheme();
   const { t } = useTranslation();
-
-  const certificates = [
-    PlatziTituloGrande,
-    JavascriptGrande,
-    ResponsiveGrande,
-    HTMLCSSTituloGrande,
-    UXResearchTituloGrande,
-    NucbaTituloGrande,
-  ];
-
-  const [isGalleryOpen, setGalleryOpen] = useState(false);
-  const [initialIndex, setInitialIndex] = useState(0);
-
-  const openGallery = (index) => {
-    console.log(index);
-
-    setInitialIndex(index);
-    setGalleryOpen(true);
-  };
-
-  const closeGallery = () => setGalleryOpen(false);
+  const { isGalleryOpen, initialIndex, openGallery, closeGallery } =
+    useGallery();
 
   return (
     <AnimatedComponent animation="slide" direction="up" delay={1}>
@@ -91,7 +65,7 @@ const EducationCards = ({
         </figure>
 
         <Gallery
-          images={certificates}
+          images={certificatesItems}
           initialIndex={initialIndex}
           isOpen={isGalleryOpen}
           onClose={closeGallery}

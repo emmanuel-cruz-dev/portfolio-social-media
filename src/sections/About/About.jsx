@@ -1,11 +1,11 @@
-import AnimatedComponent from "./AnimatedComponent";
+import AnimatedComponent from "../../components/AnimatedComponent";
 import { useTranslation } from "react-i18next";
-import Logo from "../assets/icons/logo-negro.png";
-import Screens from "../assets/images/responsive-screens.png";
-import Background from "../assets/images/front_end-background.webp";
-import { useTheme } from "./ThemeContext";
+import Logo from "../../assets/icons/logo-negro.png";
+import Screens from "../../assets/images/responsive-screens.png";
+import Background from "../../assets/images/front_end-background.webp";
+import { useTheme } from "../../components/ThemeContext";
 
-const About = () => {
+function About() {
   const { t } = useTranslation();
   const { theme } = useTheme();
 
@@ -159,6 +159,6 @@ const About = () => {
       </article>
     </section>
   );
-};
+}
 
 export default About;

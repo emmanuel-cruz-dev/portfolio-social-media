@@ -34,7 +34,7 @@ const useMusicPlayer = () => {
     if (isPlaying) {
       audioRef.current.play();
     }
-  }, [currentTrack]);
+  }, [currentTrack, isPlaying]);
 
   const currentSong = musicList[currentTrack];
 
