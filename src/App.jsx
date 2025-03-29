@@ -1,12 +1,12 @@
 import "./styles/main.scss";
-import Header from "./components/Header";
+import Header from "./components/layout/Header/Header";
 import Hero from "./components/Hero";
 import ScrollToTopButton from "./components/ui/ScrollToTopButton";
 import Education from "./sections/Education/Education";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import FlipCards from "./components/FlipCards";
-import Footer from "./components/Footer";
+import Footer from "./components/layout/Footer/Footer";
 import MusicPlayer from "./components/MusicPlayer";
 import About from "./sections/About/About";
 

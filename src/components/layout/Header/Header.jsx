@@ -1,22 +1,14 @@
 import { useTranslation } from "react-i18next";
-import logoBlanco from "../assets/icons/logo-blanco.png";
-import logoNegro from "../assets/icons/logo-negro.png";
-import LanguageSwitcher from "./LanguageSwitcher";
-import { useTheme } from "./ThemeContext";
-import { useState } from "react";
+import logoBlanco from "../../../assets/icons/logo-blanco.png";
+import logoNegro from "../../../assets/icons/logo-negro.png";
+import LanguageSwitcher from "../../LanguageSwitcher";
+import { useTheme } from "../../ThemeContext";
+import useMenu from "../../../hook/useMenu";
 
-const Header = () => {
+function Header() {
   const { t } = useTranslation();
   const { theme, toggleTheme } = useTheme();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  const { isMenuOpen, toggleMenu, closeMenu } = useMenu();
 
   return (
     <header
@@ -101,6 +93,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+}
 
 export default Header;

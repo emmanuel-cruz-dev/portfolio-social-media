@@ -1,14 +1,14 @@
 import { useTranslation } from "react-i18next";
-import Logro from "../assets/icons/logro.png";
-import LogoBlanco from "../assets/icons/logo-blanco.png";
-import freeCodeCampLogo from "../assets/images/freecodecamp-logo.jpg";
-import PlatziLogo from "../assets/images/platzi-logo.jpg";
-import FoodieLogo from "../assets/images/foodie-logo.jpg";
-import BaristasLogo from "../assets/images/baristas-logo.jpg";
-import SocialLinks from "./SocialLinks";
-import AnimatedComponent from "./AnimatedComponent";
+import Logro from "../../../assets/icons/logro.png";
+import LogoBlanco from "../../../assets/icons/logo-blanco.png";
+import freeCodeCampLogo from "../../../assets/images/freecodecamp-logo.jpg";
+import PlatziLogo from "../../../assets/images/platzi-logo.jpg";
+import FoodieLogo from "../../../assets/images/foodie-logo.jpg";
+import BaristasLogo from "../../../assets/images/baristas-logo.jpg";
+import SocialLinks from "../../SocialLinks";
+import AnimatedComponent from "../../AnimatedComponent";
 
-const Footer = () => {
+function Footer() {
   const { t } = useTranslation();
 
   return (
@@ -151,6 +151,6 @@ const Footer = () => {
       </article>
     </footer>
   );
-};
+}
 
 export default Footer;
