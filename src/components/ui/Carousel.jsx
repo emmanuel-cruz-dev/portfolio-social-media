@@ -1,20 +1,10 @@
 import Slider from "react-slick";
+import { carouselSettings } from "../../data/carouselSettings";
 
 const Carousel = ({ img1, img2, img3 }) => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 8000,
-    arrows: false,
-  };
-
   return (
-    <div className="projects__item__slider overflow-hidden">
-      <Slider {...settings}>
+    <article className="projects__item__slider overflow-hidden">
+      <Slider {...carouselSettings}>
         <div>
           <img src={img1} alt="Tarjeta de proyecto" loading="lazy" />
         </div>
@@ -25,7 +15,7 @@ const Carousel = ({ img1, img2, img3 }) => {
           <img src={img3} alt="Tarjeta de proyecto" loading="lazy" />
         </div>
       </Slider>
-    </div>
+    </article>
   );
 };
 

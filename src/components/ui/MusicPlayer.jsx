@@ -23,7 +23,7 @@ function MusicPlayer() {
   const { isVisible } = useVisibility();
 
   return (
-    <div
+    <article
       className={`hidden md:block ${
         isVisible ? "opacity-100" : "translate-x-full opacity-0"
       } overflow-hidden`}
@@ -105,7 +105,7 @@ function MusicPlayer() {
           {isOpen ? "keyboard_arrow_left" : "keyboard_arrow_right"}
         </span>
       </article>
-    </div>
+    </article>
   );
 }
 
