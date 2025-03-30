@@ -1,0 +1,90 @@
+// --- Inicio: Flip Cards --- //
+
+.cards__front-back {
+  position: relative;
+  width: 21rem;
+  height: 25rem;
+}
+
+@media screen and (max-width: 640px) {
+  .cards__front-back {
+    width: 91vw;
+    height: 24rem;
+  }
+}
+
+.cards__front-back > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding-inline: 1.5rem;
+  backface-visibility: hidden;
+}
+
+// Card 1
+.cards__front-back .front1 {
+  transform: perspective(600px) rotateY(0deg);
+  transition: transform 1.5s ease-in-out 0.4s;
+}
+
+.cards__front-back .back1 {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #ff6b6b;
+  transition: transform 1.5s ease-in-out 0.4s;
+}
+
+.flip-in .cards__front-back .front1 {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.flip-in .cards__front-back .back1 {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+// Card 2
+.cards__front-back .front2 {
+  transform: perspective(600px) rotateX(0deg);
+  transition: transform 1.5s ease-in-out 0.8s;
+}
+
+.cards__front-back .back2 {
+  transform: perspective(600px) rotateX(180deg);
+  background-color: #2cffc0;
+  transition: transform 1.5s ease-in-out 0.8s;
+}
+
+.flip-in .cards__front-back .front2 {
+  transform: perspective(600px) rotateX(-180deg);
+}
+
+.flip-in .cards__front-back .back2 {
+  transform: perspective(600px) rotateX(0deg);
+}
+
+// Card 3
+.cards__front-back .front3 {
+  transform: perspective(600px) rotateY(0deg);
+  transition: transform 1.5s ease-in-out 1.2s;
+}
+
+.cards__front-back .back3 {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #fbec5d;
+  transition: transform 1.5s ease-in-out 1.2s;
+}
+
+.flip-in .cards__front-back .front3 {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip-in .cards__front-back .back3 {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+// --- Fin: Flip Cards --- //
