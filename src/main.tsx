@@ -5,7 +5,14 @@ import "./styles/main.scss";
 import "./i18n/languages.js";
 import { ThemeProvider } from "./context/ThemeContext";
 
-createRoot(document.getElementById("root")).render(
+const rootElement = document.getElementById("root");
+if (!rootElement) {
+  throw new Error("No se encontró el elemento con id 'root'");
+}
+
+const root = createRoot(rootElement);
+
+root.render(
   <StrictMode>
     <ThemeProvider>
       <App />

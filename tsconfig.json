@@ -20,6 +20,6 @@
       "@utils/*": ["src/utils/*"]
     }
   },
-  "include": ["src"], // Incluye todos los archivos dentro de la carpeta `src`.
+  "include": ["src", "src/types"], // Incluye todos los archivos dentro de la carpeta `src`.
   "exclude": ["node_modules", "build", "dist"] // Excluye carpetas innecesarias.
 }
