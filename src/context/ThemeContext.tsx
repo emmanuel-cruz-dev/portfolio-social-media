@@ -1,11 +1,27 @@
-import { createContext, useEffect, useState, useContext } from "react";
+import {
+  createContext,
+  useEffect,
+  useState,
+  useContext,
+  ReactNode,
+  FC,
+} from "react";
+
+interface ThemeContextType {
+  theme: string;
+  setTheme: (theme: string) => void;
+}
+
+interface ThemeProviderProps {
+  children: ReactNode;
+}
 
 // Crear el contexto para el tema
-const ThemeContext = createContext();
+const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 // Proveedor de tema
-export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(
+export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
+  const [theme, setTheme] = useState<string>(
     () => localStorage.getItem("theme") || "dark"
   );
 

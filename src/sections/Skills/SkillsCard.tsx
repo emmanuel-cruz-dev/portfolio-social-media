@@ -1,4 +1,7 @@
-const SkillsCard = ({ src, alt, title }) => {
+import { FC } from "react";
+import { SkillsCardProps } from "src/types/types";
+
+const SkillsCard: FC<SkillsCardProps> = ({ src, alt, title }) => {
   return (
     <div className="card">
       <img
