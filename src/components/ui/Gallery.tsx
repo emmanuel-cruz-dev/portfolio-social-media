@@ -2,13 +2,7 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import useGalleryLogic from "../../hook/useGalleryLogic";
 import { FC } from "react";
-
-interface GalleryProps {
-  images: string[];
-  initialIndex: number;
-  isOpen: boolean;
-  onClose: () => void;
-}
+import { GalleryProps } from "src/types/types";
 
 const Gallery: FC<GalleryProps> = ({
   images,
@@ -30,7 +24,6 @@ const Gallery: FC<GalleryProps> = ({
             currentIndex: initialIndex,
             onIndexChange: handleIndexChange,
           }}
-          // onIndexChange={handleIndexChange}
         />
       )}
     </div>

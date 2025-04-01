@@ -34,10 +34,28 @@ export interface useGalleryLogicReturn {
   handleIndexChange: (newIndex: number) => void;
 }
 
+export interface GalleryProps {
+  images: string[];
+  initialIndex: number;
+  isOpen: boolean;
+  onClose: () => void;
+}
+
 export interface CarouselProps {
   img1: string;
   img2: string;
   img3: string;
+}
+
+export interface EducationCardsProps {
+  img: string;
+  href: string;
+  logo: string;
+  blackLogo?: string;
+  title: string;
+  span: string;
+  description: string;
+  num: number;
 }
 
 export interface SkillsCardProps {

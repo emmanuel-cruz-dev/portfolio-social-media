@@ -26,23 +26,6 @@ function Education() {
         {certificates.map((certificate) => (
           <EducationCards key={certificate.id} {...certificate} />
         ))}
-        {/* Certificado 1 */}
-        {/* <EducationCards {...certificate1} /> */}
-
-        {/* Certificado 2 */}
-        {/* <EducationCards {...certificate2} /> */}
-
-        {/* Certificado 3 */}
-        {/* <EducationCards {...certificate3} /> */}
-
-        {/* Certificado 4 */}
-        {/* <EducationCards {...certificate4} /> */}
-
-        {/* Certificado 5 */}
-        {/* <EducationCards {...certificate5} /> */}
-
-        {/* Certificado 6 */}
-        {/* <EducationCards {...certificate6} /> */}
       </article>
     </section>
   );

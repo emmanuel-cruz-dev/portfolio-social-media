@@ -12,8 +12,9 @@ import freeCodeCampResponsive from "../assets/images/freecodecamp-responsive-min
 import HTMLCSSTitulo from "../assets/images/html-css-mini.jpg";
 import UXResearchTitulo from "../assets/images/ux-research-mini.jpg";
 import NucbaTitulo from "../assets/images/nucba-mini.jpg";
+import { TFunction } from "i18next";
 
-export const educationCertificates = (t) => [
+export const educationCertificates = (t: TFunction) => [
   {
     id: 1,
     img: PlatziTitulo,
@@ -22,7 +23,7 @@ export const educationCertificates = (t) => [
     title: "Programación Básica",
     span: "Platzi",
     description: t("sections.certifications.platzi"),
-    num: "0",
+    num: 0,
   },
   {
     id: 2,
@@ -33,7 +34,7 @@ export const educationCertificates = (t) => [
     title: "JavaScript Algorithms and Data Structures",
     span: "freeCodeCamp",
     description: t("sections.certifications.javascript"),
-    num: "1",
+    num: 1,
   },
   {
     id: 3,
@@ -44,7 +45,7 @@ export const educationCertificates = (t) => [
     title: "Responsive Web Design",
     span: "freeCodeCamp",
     description: t("sections.certifications.responsive"),
-    num: "2",
+    num: 2,
   },
   {
     id: 4,
@@ -55,7 +56,7 @@ export const educationCertificates = (t) => [
     title: "HTML Y CSS AVANZADO",
     span: "Academia BA Emprende",
     description: t("sections.certifications.htmlcss"),
-    num: "3",
+    num: 3,
   },
   {
     id: 5,
@@ -66,7 +67,7 @@ export const educationCertificates = (t) => [
     title: "UX Research",
     span: "Academia BA Emprende",
     description: t("sections.certifications.uxresearch"),
-    num: "4",
+    num: 4,
   },
   {
     id: 6,
@@ -77,6 +78,6 @@ export const educationCertificates = (t) => [
     title: "HERRAMIENTAS IA Y NO-CODE",
     span: "Nucba",
     description: t("sections.certifications.nucba"),
-    num: "5",
+    num: 5,
   },
 ];

@@ -18,8 +18,9 @@ import JqueryLogo from "../assets/icons/jquery-logo.png";
 import ReactLogo from "../assets/icons/react-logo.png";
 import TailwindLogo from "../assets/icons/tailwindcss-logo.png";
 import SassLogo from "../assets/icons/sass-logo.png";
+import { TFunction } from "i18next";
 
-export const projectsItems = (t) => [
+export const projectsItems = (t: TFunction) => [
   {
     id: 1,
     title: "Los Pollos Hermanos",

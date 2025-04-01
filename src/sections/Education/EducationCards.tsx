@@ -4,8 +4,10 @@ import { useTranslation } from "react-i18next";
 import Gallery from "../../components/ui/Gallery";
 import { certificatesItems } from "../../data/certificatesItems";
 import useGallery from "../../hook/useGallery";
+import { FC } from "react";
+import { EducationCardsProps } from "src/types/types";
 
-const EducationCards = ({
+const EducationCards: FC<EducationCardsProps> = ({
   img,
   href,
   logo,
