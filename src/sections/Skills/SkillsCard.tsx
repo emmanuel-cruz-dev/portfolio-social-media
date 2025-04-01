@@ -9,6 +9,8 @@ const SkillsCard: FC<SkillsCardProps> = ({ src, alt, title }) => {
         alt={`${alt} logo`}
         title={title}
         loading="lazy"
+        width={900}
+        height={900}
         className="w-16 hover:scale-110 transition-transform duration-300"
       />
       <p className="font-semibold">{alt}</p>
