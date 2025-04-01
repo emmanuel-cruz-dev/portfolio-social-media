@@ -1,7 +1,13 @@
 import { useEffect, useRef } from "react";
+import { UseAnimationProps, UseAnimationReturn } from "src/types/types";
 
-const useAnimation = (threshold, animation, direction, delay) => {
-  const elementRef = useRef(null);
+const useAnimation = ({
+  threshold,
+  animation,
+  direction,
+  delay,
+}: UseAnimationProps): UseAnimationReturn => {
+  const elementRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
