@@ -127,7 +127,7 @@ function Footer() {
 
       <article className="flex justify-center items-center p-8 uppercase text-xs">
         <div className="flex flex-col gap-8 md:gap-4">
-          <ul className="footer__list flex flex-col md:flex-row text-center justify-center gap-6 font-semibold">
+          <ul className="footer__list flex flex-col sm:flex-row text-center justify-center gap-6 font-semibold">
             <li>
               <a href="#hero">{t("navbar.home")}</a>
             </li>
