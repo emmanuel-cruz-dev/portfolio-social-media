@@ -1,43 +1,11 @@
-import {
-  createContext,
-  useEffect,
-  useState,
-  useContext,
-  ReactNode,
-  FC,
-} from "react";
+import { createContext, useContext, FC } from "react";
+import useThemeLogic from "../hook/useThemeLogic";
+import { ThemeContextType, ThemeProviderProps } from "src/types/types";
 
-interface ThemeContextType {
-  theme: string;
-  setTheme: (theme: string) => void;
-}
-
-interface ThemeProviderProps {
-  children: ReactNode;
-}
-
-// Crear el contexto para el tema
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-// Proveedor de tema
 export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState<string>(
-    () => localStorage.getItem("theme") || "dark"
-  );
-
-  useEffect(() => {
-    const root = window.document.documentElement;
-    if (theme === "dark") {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
-    localStorage.setItem("theme", theme); // Guardar en localStorage
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
-  };
+  const { theme, toggleTheme } = useThemeLogic();
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
@@ -46,5 +14,4 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
   );
 };
 
-// Hook para acceder al contexto del tema
 export const useTheme = () => useContext(ThemeContext);
