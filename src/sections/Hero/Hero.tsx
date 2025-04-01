@@ -45,7 +45,7 @@ function Hero() {
           </figure>
         </AnimatedComponent>
 
-        <div className="sm:hidden z-50">
+        <div className="sm:hidden">
           <Links />
         </div>
       </article>
