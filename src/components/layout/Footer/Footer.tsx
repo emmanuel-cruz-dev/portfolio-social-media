@@ -142,7 +142,7 @@ function Footer() {
             </li>
           </ul>
           <AnimatedComponent animation="fade" delay={0}>
-            <p className="footer__link text-center text-slate-400">
+            <p className="footer__link text-center w-2/3 md:w-auto text-slate-400 mx-auto">
               © 2024 · {t("footer.paragraph")} Emmanuel Cruz · Buenos Aires,
               Argentina
             </p>
