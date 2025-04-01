@@ -5,19 +5,21 @@ const useMusicPlayer = () => {
   const [currentTrack, setCurrentTrack] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
-  const audioRef = useRef(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const handleOpenMusicPlayer = () => {
     setIsOpen(!isOpen);
   };
 
   const handlePlayPause = () => {
-    if (isPlaying) {
-      audioRef.current.pause();
-    } else {
-      audioRef.current.play();
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
     }
-    setIsPlaying(!isPlaying);
   };
 
   const handleNext = () => {
@@ -31,7 +33,7 @@ const useMusicPlayer = () => {
   };
 
   useEffect(() => {
-    if (isPlaying) {
+    if (isPlaying && audioRef.current) {
       audioRef.current.play();
     }
   }, [currentTrack, isPlaying]);
