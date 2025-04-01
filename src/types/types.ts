@@ -63,3 +63,19 @@ export interface SkillsCardProps {
   alt: string;
   title: string;
 }
+
+export interface TechnologiesProps {
+  img: string;
+  name: string;
+}
+
+export interface ProjectsCardProps {
+  title: string;
+  description: string;
+  img1: string;
+  img2: string;
+  img3: string;
+  flyer: string;
+  technologies: TechnologiesProps[];
+  link: string;
+}

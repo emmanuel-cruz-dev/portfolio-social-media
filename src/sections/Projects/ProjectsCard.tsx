@@ -6,17 +6,7 @@ import DarkMode from "../../assets/icons/darkmode-logo.png";
 import idiomasLogo from "../../assets/icons/idiomas-logo.png";
 import { useTheme } from "../../context/ThemeContext";
 import { FC } from "react";
-
-interface ProjectsCardProps {
-  title: string;
-  description: string;
-  img1: string;
-  img2: string;
-  img3: string;
-  flyer: string;
-  technologies: string[];
-  link: string;
-}
+import { ProjectsCardProps } from "src/types/types";
 
 const ProjectsCard: FC<ProjectsCardProps> = ({
   title,
@@ -30,7 +20,7 @@ const ProjectsCard: FC<ProjectsCardProps> = ({
 }) => {
   const { t } = useTranslation();
   const { theme } = useTheme();
-  const icons = {
+  const icons: Record<string, JSX.Element> = {
     responsive: (
       <div className="projects__item__card absolute flex flex-col items-center -top-3 -right-[3.6rem] bg-accent z-10 rotate-45 pb-1 pt-5 px-7">
         <img
