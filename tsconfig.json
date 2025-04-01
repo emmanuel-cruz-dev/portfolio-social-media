@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./src/types"],
     "target": "es2016", // Puedes cambiar a "es2020" o "esnext" si usas características modernas.
     "module": "esnext", // Recomendado para proyectos React.
     "lib": ["dom", "dom.iterable", "esnext"], // Incluye tipos para el DOM y ESNext.

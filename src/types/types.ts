@@ -23,10 +23,21 @@ export interface UseAnimationReturn {
 
 export interface AnimatedComponentProps {
   children: ReactNode;
-  threshold: number;
-  animation: string;
-  direction: string;
+  threshold?: number;
+  animation?: string;
+  direction?: string;
   delay: number;
+}
+
+export interface useGalleryLogicReturn {
+  index: number;
+  handleIndexChange: (newIndex: number) => void;
+}
+
+export interface CarouselProps {
+  img1: string;
+  img2: string;
+  img3: string;
 }
 
 export interface SkillsCardProps {

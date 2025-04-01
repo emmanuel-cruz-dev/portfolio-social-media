@@ -1,8 +1,21 @@
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import useGalleryLogic from "../../hook/useGalleryLogic";
+import { FC } from "react";
 
-const Gallery = ({ images, initialIndex, isOpen, onClose }) => {
+interface GalleryProps {
+  images: string[];
+  initialIndex: number;
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+const Gallery: FC<GalleryProps> = ({
+  images,
+  initialIndex,
+  isOpen,
+  onClose,
+}) => {
   const { handleIndexChange } = useGalleryLogic(initialIndex);
 
   return (
@@ -13,7 +26,11 @@ const Gallery = ({ images, initialIndex, isOpen, onClose }) => {
           open={isOpen}
           close={onClose}
           index={initialIndex}
-          onIndexChange={handleIndexChange}
+          carousel={{
+            currentIndex: initialIndex,
+            onIndexChange: handleIndexChange,
+          }}
+          // onIndexChange={handleIndexChange}
         />
       )}
     </div>

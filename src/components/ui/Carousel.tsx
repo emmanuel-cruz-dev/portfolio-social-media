@@ -1,7 +1,9 @@
 import Slider from "react-slick";
 import { carouselSettings } from "../../data/carouselSettings";
+import { FC } from "react";
+import { CarouselProps } from "src/types/types";
 
-const Carousel = ({ img1, img2, img3 }) => {
+const Carousel: FC<CarouselProps> = ({ img1, img2, img3 }) => {
   return (
     <article className="projects__item__slider overflow-hidden">
       <Slider {...carouselSettings}>
