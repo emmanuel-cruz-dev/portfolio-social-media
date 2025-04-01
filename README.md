@@ -11,6 +11,7 @@ Esta es la segunda versión de mi portfolio, diseñada especialmente para redes 
 ## Tecnologías utilizadas
 
 - React
+- TypeScript
 - Tailwind CSS
 - Sass
 

@@ -5,8 +5,20 @@ import ResponsiveLogo from "../../assets/icons/responsiveweb-card-logo.png";
 import DarkMode from "../../assets/icons/darkmode-logo.png";
 import idiomasLogo from "../../assets/icons/idiomas-logo.png";
 import { useTheme } from "../../context/ThemeContext";
+import { FC } from "react";
 
-const ProjectsCard = ({
+interface ProjectsCardProps {
+  title: string;
+  description: string;
+  img1: string;
+  img2: string;
+  img3: string;
+  flyer: string;
+  technologies: string[];
+  link: string;
+}
+
+const ProjectsCard: FC<ProjectsCardProps> = ({
   title,
   description,
   img1,
