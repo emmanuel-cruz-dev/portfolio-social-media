@@ -49,7 +49,7 @@ export const projectsItems = (t: TFunction) => [
     img1: CardLockKey1,
     img2: CardLockKey2,
     img3: CardLockKey3,
-    flyer: "darkMode",
+    flyer: "dark",
     technologies: [
       { name: "React", img: ReactLogo },
       { name: "TypeScript", img: TypeScriptLogo },
@@ -60,22 +60,6 @@ export const projectsItems = (t: TFunction) => [
   },
   {
     id: 3,
-    title: "Literarium | Bookstore",
-    description: t("sections.projects.literarium"),
-    img1: CardLiterarium1,
-    img2: CardLiterarium2,
-    img3: CardLiterarium3,
-    flyer: "responsive",
-    technologies: [
-      { name: "React", img: ReactLogo },
-      { name: "TypeScript", img: TypeScriptLogo },
-      { name: "Tailwind CSS", img: TailwindLogo },
-    ],
-    link: "https://literarium.netlify.app/",
-    github: "https://github.com/EmmaLCruz/literarium",
-  },
-  {
-    id: 4,
     title: "Jinjer | Website",
     description: t("sections.projects.jinjer"),
     img1: CardJinjer1,
@@ -90,5 +74,21 @@ export const projectsItems = (t: TFunction) => [
     ],
     link: "https://jinjer.vercel.app/",
     github: "https://github.com/EmmaLCruz/jinjer",
+  },
+  {
+    id: 4,
+    title: "Literarium | Bookstore",
+    description: t("sections.projects.literarium"),
+    img1: CardLiterarium1,
+    img2: CardLiterarium2,
+    img3: CardLiterarium3,
+    flyer: "responsive",
+    technologies: [
+      { name: "React", img: ReactLogo },
+      { name: "TypeScript", img: TypeScriptLogo },
+      { name: "Tailwind CSS", img: TailwindLogo },
+    ],
+    link: "https://literarium.netlify.app/",
+    github: "https://github.com/EmmaLCruz/literarium",
   },
 ];

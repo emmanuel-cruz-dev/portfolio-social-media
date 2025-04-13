@@ -136,6 +136,8 @@ const resources = {
           description: "Explore a sample of my work and skills in action.",
           pollos:
             "This site brings the fictional restaurant from Breaking Bad into the digital world. Inspired by the visual style of restaurants like KFC, this site combines an attractive design with details that refer to the series. Explore a visual experience that will make you feel like you're in a real Gus Fring franchise.",
+          lockKey:
+            "Password manager designed to offer secure and efficient credential management. The project was developed as part of a collaborative experience-oriented simulation for the No Country platform. (Trial version)",
           jinjer:
             "Music artist platform inspired by the band Jinjer. The site offers a complete experience: bilingual navigation (English/Spanish) with interactive sections, including news, biographies, tour dates, discography, music player, multimedia gallery and an online store",
           literarium:
@@ -296,11 +298,13 @@ const resources = {
             "Explora una muestra de mi trabajo y habilidades en acción.",
           pollos:
             "Este sitio lleva el restaurante ficticio de Breaking Bad al mundo digital. Inspirado en el estilo visual de restaurantes como KFC, esta página combina un diseño atractivo con detalles que remiten a la serie. Explora una experiencia visual que te hará sentir en una franquicia de Gus Fring.",
-          button: "Visitar sitio",
+          lockKey:
+            "Administrador de contraseñas pensado para ofrecer una gestión segura y eficiente de credenciales. El proyecto fue desarrollado en el marco de una simulación orientada a experiencias colaborativas, para la plataforma No Country. (Versión de prueba)",
           jinjer:
             "Plataforma de artista musical inspirada en la banda Jinjer. El sitio ofrece una experiencia completa: navegación bilingüe (inglés/español) con secciones interactivas, incluye noticias, biografías, fechas de gira, discografía, reproductor de música, galería multimedia y una tienda en línea",
           literarium:
             "Biblioteca digital moderna que fusiona la experiencia de una librería tradicional con tecnología de vanguardia. Navegación intuitiva entre secciones detalladas, contenido adaptado a cada sección y diseño responsivo para una experiencia personalizada",
+          button: "Visitar sitio",
           link: "Más detalles",
           buttonTitle: "Ver la demo en vivo del proyecto",
           githubTitle: "Explorar el código fuente del proyecto",
