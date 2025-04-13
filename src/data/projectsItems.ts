@@ -2,6 +2,10 @@ import CardPollosHermanos1 from "../assets/images/card-pollos-hermanos1.webp";
 import CardPollosHermanos2 from "../assets/images/card-pollos-hermanos2.webp";
 import CardPollosHermanos3 from "../assets/images/card-pollos-hermanos3.webp";
 
+import CardLockKey1 from "../assets/images/card-lock-key1.webp";
+import CardLockKey2 from "../assets/images/card-lock-key2.webp";
+import CardLockKey3 from "../assets/images/card-lock-key3.webp";
+
 import CardJinjer1 from "../assets/images/card-jinjer1.webp";
 import CardJinjer2 from "../assets/images/card-jinjer2.webp";
 import CardJinjer3 from "../assets/images/card-jinjer3.webp";
@@ -40,6 +44,22 @@ export const projectsItems = (t: TFunction) => [
   },
   {
     id: 2,
+    title: "LockKey | Gestor de Contraseñas",
+    description: t("sections.projects.lockKey"),
+    img1: CardLockKey1,
+    img2: CardLockKey2,
+    img3: CardLockKey3,
+    flyer: "darkMode",
+    technologies: [
+      { name: "React", img: ReactLogo },
+      { name: "TypeScript", img: TypeScriptLogo },
+      { name: "Tailwind CSS", img: TailwindLogo },
+    ],
+    link: "https://lock-key.vercel.app/",
+    github: "https://github.com/emmanuel-cruz-dev/lockkey-no-country-mvp",
+  },
+  {
+    id: 3,
     title: "Literarium | Bookstore",
     description: t("sections.projects.literarium"),
     img1: CardLiterarium1,
@@ -55,7 +75,7 @@ export const projectsItems = (t: TFunction) => [
     github: "https://github.com/EmmaLCruz/literarium",
   },
   {
-    id: 3,
+    id: 4,
     title: "Jinjer | Website",
     description: t("sections.projects.jinjer"),
     img1: CardJinjer1,
