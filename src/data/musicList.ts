@@ -1,12 +1,14 @@
 import Song1 from "../assets/songs/song1.m4a";
-import Song2 from "../assets/songs/song2.m4a";
+import Song2 from "../assets/songs/song2.mp3";
 import Song3 from "../assets/songs/song3.mp3";
 import Song4 from "../assets/songs/song4.m4a";
 import Song5 from "../assets/songs/song5.m4a";
 import Song6 from "../assets/songs/song6.m4a";
 import Song7 from "../assets/songs/song7.m4a";
+import Song8 from "../assets/songs/song8.m4a";
 
 import CampAlbum from "../assets/images/camp.jpg";
+import PostAlbum from "../assets/images/post.webp";
 import TheResistanceAlbum from "../assets/images/the-resistance.jpg";
 import SuperunknownAlbum from "../assets/images/superunknown.jpg";
 import TalkToMeAlbum from "../assets/images/talk-to-me.jpg";
@@ -23,11 +25,11 @@ export const musicList = [
     album: "Camp",
   },
   {
-    title: "Undisclosed Desires",
-    artist: "Muse",
+    title: "Army of Me",
+    artist: "Björk",
     src: `${Song2}`,
-    cover: `${TheResistanceAlbum}`,
-    album: "The Resistance",
+    cover: `${PostAlbum}`,
+    album: "Post",
   },
   {
     title: "Portrait #1",
@@ -63,5 +65,12 @@ export const musicList = [
     src: `${Song7}`,
     cover: `${SheWantsRevenge}`,
     album: "She Wants Revenge",
+  },
+  {
+    title: "Undisclosed Desires",
+    artist: "Muse",
+    src: `${Song8}`,
+    cover: `${TheResistanceAlbum}`,
+    album: "The Resistance",
   },
 ];
