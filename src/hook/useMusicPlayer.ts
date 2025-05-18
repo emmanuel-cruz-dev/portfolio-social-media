@@ -27,9 +27,12 @@ const useMusicPlayer = () => {
   };
 
   const handlePrevious = () => {
-    setCurrentTrack((prevTrack) =>
-      prevTrack === 0 ? musicList.length - 1 : prevTrack - 1
-    );
+    setCurrentTrack((prevTrack) => {
+      if (musicList.length == 0) {
+        return prevTrack;
+      }
+      return prevTrack === 0 ? musicList.length - 1 : prevTrack - 1;
+    });
   };
 
   useEffect(() => {
@@ -39,6 +42,7 @@ const useMusicPlayer = () => {
   }, [currentTrack, isPlaying]);
 
   const currentSong = musicList[currentTrack];
+  const prevSong = currentTrack > 0 ? musicList[currentTrack - 1] : null;
   const nextSong = musicList[currentTrack + 1];
 
   return {
@@ -49,6 +53,8 @@ const useMusicPlayer = () => {
     handlePlayPause,
     audioRef,
     currentSong,
+    currentTrack,
+    prevSong,
     nextSong,
     handleOpenMusicPlayer,
   };

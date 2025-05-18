@@ -17,7 +17,9 @@ function MusicPlayer() {
     handleNext,
     handlePlayPause,
     audioRef,
+    currentTrack,
     currentSong,
+    prevSong,
     nextSong,
     handleOpenMusicPlayer,
   } = useMusicPlayer();
@@ -69,9 +71,14 @@ function MusicPlayer() {
           {/* Controles de reproducción */}
           <div className="music-player__controls items-center space-x-1">
             <button
-              title={t("musicPlayer.prev")}
+              title={
+                currentTrack >= 1 && prevSong != null
+                  ? `${t("musicPlayer.prev")} "${prevSong.title}"`
+                  : ""
+              }
               onClick={handlePrevious}
-              className="hover:bg-gray-700 p-2 rounded border-none"
+              className="hover:bg-gray-700 p-2 rounded border-none disabled:opacity-50 disabled:cursor-not-allowed"
+              disabled={currentTrack === 0}
             >
               <FaBackwardStep size={18} />
             </button>
@@ -86,7 +93,9 @@ function MusicPlayer() {
 
             <button
               onClick={handleNext}
-              title={`${t("musicPlayer.next")} "${nextSong.title}"`}
+              title={`${t("musicPlayer.next")} "${
+                nextSong ? nextSong.title : "Les"
+              }"`}
               className="hover:bg-gray-700 p-2 rounded border-none"
             >
               <FaForwardStep size={18} />
