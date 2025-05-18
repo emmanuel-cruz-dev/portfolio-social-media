@@ -39,6 +39,7 @@ const useMusicPlayer = () => {
   }, [currentTrack, isPlaying]);
 
   const currentSong = musicList[currentTrack];
+  const nextSong = musicList[currentTrack + 1];
 
   return {
     isOpen,
@@ -48,6 +49,7 @@ const useMusicPlayer = () => {
     handlePlayPause,
     audioRef,
     currentSong,
+    nextSong,
     handleOpenMusicPlayer,
   };
 };

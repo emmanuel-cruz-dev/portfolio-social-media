@@ -18,6 +18,7 @@ function MusicPlayer() {
     handlePlayPause,
     audioRef,
     currentSong,
+    nextSong,
     handleOpenMusicPlayer,
   } = useMusicPlayer();
   const { isVisible } = useVisibility();
@@ -40,7 +41,6 @@ function MusicPlayer() {
               <img
                 src={currentSong.cover}
                 alt="Portada del álbum"
-                //title={t("musicPlayer.albumCover")}
                 title={`${t("musicPlayer.albumCover")} "${currentSong.album}"`}
                 className="cover rounded-sm"
                 width="400"
@@ -86,7 +86,7 @@ function MusicPlayer() {
 
             <button
               onClick={handleNext}
-              title={t("musicPlayer.next")}
+              title={`${t("musicPlayer.next")} "${nextSong.title}"`}
               className="hover:bg-gray-700 p-2 rounded border-none"
             >
               <FaForwardStep size={18} />
