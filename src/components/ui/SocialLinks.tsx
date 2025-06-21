@@ -10,7 +10,7 @@ function SocialLinks() {
     <article className="flex gap-4 social-links__container">
       <a
         aria-label="Instagram"
-        className="social-links w-7 hover:text-accent hover:scale-105 transition-all duration-500 ease-in-out"
+        className="social-links"
         href="https://www.instagram.com/emmanuel_gerz/"
         target="_blank"
         rel="noopener noreferrer"
@@ -19,7 +19,7 @@ function SocialLinks() {
       </a>
       <a
         aria-label="Facebook"
-        className="social-links w-7 hover:text-accent hover:scale-105 transition-all duration-500 ease-in-out"
+        className="social-links"
         href="https://www.facebook.com/profile.php?id=100010054865787"
         target="_blank"
         rel="noopener noreferrer"
@@ -28,7 +28,7 @@ function SocialLinks() {
       </a>
       <a
         aria-label="Linkedin"
-        className="social-links w-7 hover:text-accent hover:scale-105 transition-all duration-500 ease-in-out"
+        className="social-links"
         href="https://www.linkedin.com/in/emmanuel-cruz-dev/"
         target="_blank"
         rel="noopener noreferrer"
@@ -38,7 +38,7 @@ function SocialLinks() {
 
       <a
         aria-label="Email"
-        className="social-links w-7 hover:text-accent hover:scale-105 transition-all duration-500 ease-in-out"
+        className="social-links"
         href="mailto:emmanuelgerr@gmail.com"
         rel="noopener noreferrer"
       >
