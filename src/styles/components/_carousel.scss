@@ -1,7 +1,5 @@
 @use "../variables" as *;
 
-// --- Inicio: Slider Carrusel --- //
-
 .slick-slide {
   margin-bottom: 0;
   line-height: 0;
@@ -11,7 +9,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block; /* Esto elimina el espacio extra debajo de la imagen */
+  display: block;
 }
 
 .slick-slide > div {
@@ -36,8 +34,8 @@
 }
 
 .slick-dots li button:before {
-  font-size: 14px; // Tamaño de los puntos
-  color: #8b8b8bb0; // Color de los puntos
+  font-size: 14px;
+  color: #8b8b8bb0;
   opacity: 0.6;
   transition: opacity 0.2s ease-in-out;
 }
@@ -50,5 +48,3 @@
 .slick-dots li button:hover:before {
   opacity: 1;
 }
-
-// --- Fin: Slider Carrusel --- //

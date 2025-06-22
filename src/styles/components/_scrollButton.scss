@@ -1,7 +1,5 @@
 @use "../variables" as *;
 
-/* Efecto rellenado botón ir arriba */
-
 .up-btn::after {
   content: "";
   position: absolute;

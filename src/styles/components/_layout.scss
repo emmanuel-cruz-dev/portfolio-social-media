@@ -3,12 +3,12 @@
 // --- Inicio: NavBar --- //
 
 .bg-light {
-  background-color: #ffffff; // Color de fondo para el tema claro
+  background-color: #ffffff;
   transition: background-color 0.3s ease;
 }
 
 .bg-dark {
-  background-color: #111827; // Color de fondo para el tema oscuro
+  background-color: #111827;
   transition: background-color 0.3s ease;
 }
 
@@ -104,7 +104,7 @@
 
 .footer__list {
   li {
-    padding: 0 10px; // ajusta el padding según sea necesario
+    padding: 0 10px;
     position: relative;
 
     &:not(:last-child)::after {
