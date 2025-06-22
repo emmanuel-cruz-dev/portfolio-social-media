@@ -1,7 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-// Carga de recursos de traducción
 const resources = {
   en: {
     translation: {
@@ -47,7 +46,7 @@ const resources = {
             "Discover how my experience and skills can add value to your projects.",
           hi: "I'm",
           paragraph:
-            "Enthusiast of functional aesthetics and usability in projects. My interest in problem solving and creativity led me to the world of web development, where I constantly strive to learn and improve my skills.",
+            "Transitioning to Fullstack, expanding my backend knowledge while applying React, TypeScript, and agile methodologies in real projects. I have developed MVPs working with stakeholders and complete development teams.",
           contactMe: "Contact me",
           courses: "online courses",
           practice: "practice hours",
@@ -147,7 +146,6 @@ const resources = {
           buttonTitle: "Watch the live demo of the project",
           githubTitle: "Explore the project source code",
         },
-        // más secciones...
       },
       musicPlayer: {
         albumCover: "Cover of",
@@ -207,7 +205,7 @@ const resources = {
             "Descubrí cómo mi experiencia y habilidades pueden agregar valor a tus proyectos.",
           hi: "Soy",
           paragraph:
-            "Entusiasta de la estética funcional y la usabilidad en los proyectos. Mi interés por la resolución de problemas y la creatividad me llevaron al mundo del desarrollo web, donde me esfuerzo constantemente por aprender y mejorar mis habilidades.",
+            "En transición hacia Fullstack, expandiendo mis conocimientos en backend mientras aplico React, TypeScript y metodologías ágiles en proyectos reales. He desarrollado MVPs trabajando con stakeholders y equipos de desarrollo completos.",
           contactMe: "Contactame",
           courses: "cursos en línea",
           practice: "horas de práctica",
@@ -309,7 +307,6 @@ const resources = {
           buttonTitle: "Ver la demo en vivo del proyecto",
           githubTitle: "Explorar el código fuente del proyecto",
         },
-        // más secciones...
       },
       musicPlayer: {
         albumCover: "Portada de",
@@ -327,15 +324,13 @@ const resources = {
   },
 };
 
-i18n
-  .use(initReactI18next) // pasar i18n a react-i18next
-  .init({
-    resources,
-    lng: "es", // idioma por defecto
-    fallbackLng: "en", // idioma de respaldo
-    interpolation: {
-      escapeValue: false,
-    },
-  });
+i18n.use(initReactI18next).init({
+  resources,
+  lng: "es",
+  fallbackLng: "en",
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
 export default i18n;
