@@ -48,7 +48,7 @@ span {
 /* Margen de secciones */
 
 .scroll-top {
-  scroll-margin-top: 80px; /* Ajusta a la altura de tu navbar */
+  scroll-margin-top: 80px;
 }
 
 // --- Fin: Estilos Globales --- //
@@ -65,12 +65,12 @@ span {
 
 .shadow__light {
   box-shadow: 8px 8px 16px rgba(136, 146, 176, 0.8),
-    -8px -8px 16px rgba(255, 255, 255, 0.9); /* Resaltado para el efecto de luz */
+    -8px -8px 16px rgba(255, 255, 255, 0.9);
 }
 
 .shadow__dark {
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
-    -8px -8px 16px rgba(39, 46, 61, 0.6); /* Resaltado suave para evitar un contraste extremo */
+    -8px -8px 16px rgba(39, 46, 61, 0.6);
 }
 
 .btn__shadow__light {
