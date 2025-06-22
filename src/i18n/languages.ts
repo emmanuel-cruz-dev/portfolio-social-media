@@ -86,9 +86,12 @@ const resources = {
           css: "Cascading Style Sheets",
           javascript: "Web programming language",
           react: "JavaScript library for building user interfaces",
+          angular: "JavaScript framework for building web applications",
           tailwind: "Utility CSS framework",
           bootstrap: "Front-End development framework",
           nodejs: "JavaScript runtime environment",
+          express:
+            "Node.js framework for building backend applications and RESTful APIs",
           figma: "User interface design tool",
           git: "Version control system",
           github: "Collaborative development platform",
@@ -246,9 +249,12 @@ const resources = {
           javascript: "Lenguaje de programación web",
           react:
             "Biblioteca de JavaScript para construir interfaces de usuario",
+          angular: "Framework de JavaScript para construir aplicaciones web",
           tailwind: "Framework de CSS utilitario",
           bootstrap: "Marco de desarrollo de Front-End",
           nodejs: "Entorno de ejecución de JavaScript",
+          express:
+            "Framework de Node.js para construir aplicaciones backend y APIs RESTful",
           figma: "Herramienta de diseño de interfaz de usuario",
           git: "Sistema de control de versiones",
           github: "Plataforma de desarrollo colaborativo",
