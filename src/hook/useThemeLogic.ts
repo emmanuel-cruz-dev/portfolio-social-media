@@ -12,7 +12,7 @@ const useThemeLogic = () => {
     } else {
       root.classList.remove("dark");
     }
-    localStorage.setItem("theme", theme); // Guardar en localStorage
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   const toggleTheme = () => {

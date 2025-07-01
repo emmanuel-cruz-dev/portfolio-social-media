@@ -9,7 +9,7 @@ const useEmailCopy = () => {
       .writeText(email)
       .then(() => {
         setCopied(true);
-        setTimeout(() => setCopied(false), 2000); // Restablece el estado después de 2 segundos
+        setTimeout(() => setCopied(false), 2000);
       })
       .catch((err) => {
         console.error("Error al copiar el email: ", err);

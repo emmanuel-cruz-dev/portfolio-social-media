@@ -33,7 +33,6 @@ const useAnimation = ({
     };
   }, [threshold, animation]);
 
-  // Construimos las clases basadas en los props
   const getClasses = () => {
     const classes = ["animated", animation];
 
