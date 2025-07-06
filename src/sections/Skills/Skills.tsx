@@ -24,9 +24,10 @@ import FigmaLogo from "../../assets/icons/figma-logo.png";
 import PhotoshopLogo from "../../assets/icons/photoshop-logo.png";
 import WebflowLogo from "../../assets/icons/webflow-logo.png";
 
-import MobileFirstLogo from "../../assets/icons/mobilefirst-logo.png";
-import ResponsiveLogo from "../../assets/icons/responsive-logo.png";
-import BemLogo from "../../assets/icons/bem-logo.png";
+import JiraLogo from "../../assets/icons/jira-logo.png";
+import ClickUpLogo from "../../assets/icons/clickup-logo.png";
+import NotionLogo from "../../assets/icons/notion-logo.png";
+import TrelloLogo from "../../assets/icons/trello-logo.png";
 import SkillsCard from "./SkillsCard";
 
 function Skills() {
@@ -196,7 +197,7 @@ function Skills() {
             </article>
           </article>
 
-          {/* Metodologías */}
+          {/* Gestión de Proyectos */}
           <article
             className={`${
               theme === "dark" ? "shadow__dark" : "shadow__light"
@@ -207,21 +208,27 @@ function Skills() {
             </h4>
             <article className="flex flex-wrap gap-6 lg:gap-14 justify-around items-center">
               <SkillsCard
-                title={t("sections.skills.mobileFirst")}
-                src={MobileFirstLogo}
-                alt="Mobile-first"
+                title={t("sections.skills.jira")}
+                src={JiraLogo}
+                alt="Jira"
               />
 
               <SkillsCard
-                title={t("sections.skills.responsive")}
-                src={ResponsiveLogo}
-                alt="Responsive Design"
+                title={t("sections.skills.clickUp")}
+                src={ClickUpLogo}
+                alt="ClickUp"
               />
 
               <SkillsCard
-                title={t("sections.skills.bem")}
-                src={BemLogo}
-                alt="BEM"
+                title={t("sections.skills.notion")}
+                src={NotionLogo}
+                alt="Notion"
+              />
+
+              <SkillsCard
+                title={t("sections.skills.trello")}
+                src={TrelloLogo}
+                alt="Trello"
               />
             </article>
           </article>
