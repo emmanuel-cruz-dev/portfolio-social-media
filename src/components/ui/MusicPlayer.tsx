@@ -108,7 +108,7 @@ function MusicPlayer() {
 
         <span
           title={isOpen ? t("musicPlayer.collapse") : t("musicPlayer.expand")}
-          className="music-player__close-open material-icons-outlined"
+          className="music-player__close-open material-icons-outlined text-white"
           onClick={handleOpenMusicPlayer}
         >
           {isOpen ? "keyboard_arrow_left" : "keyboard_arrow_right"}
