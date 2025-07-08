@@ -2,10 +2,6 @@ import { useTheme } from "../../context/ThemeContext";
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import { useTranslation } from "react-i18next";
 
-import HTMLLogo from "../../assets/icons/html-logo.png";
-import CssLogo from "../../assets/icons/css-logo.png";
-import JavascriptLogo from "../../assets/icons/javascript-logo.png";
-import TypescriptLogo from "../../assets/icons/typescript-logo.png";
 import ReactLogo from "../../assets/icons/react-logo.png";
 import AngularLogo from "../../assets/icons/angular-logo.png";
 import NodeLogo from "../../assets/icons/nodejs-logo.png";
@@ -29,10 +25,12 @@ import ClickUpLogo from "../../assets/icons/clickup-logo.png";
 import NotionLogo from "../../assets/icons/notion-logo.png";
 import TrelloLogo from "../../assets/icons/trello-logo.png";
 import SkillsCard from "./SkillsCard";
+import { getWebSkills } from "../../data/skills";
 
 function Skills() {
   const { t } = useTranslation();
   const { theme } = useTheme();
+  const webSkills = getWebSkills(t);
 
   return (
     <main className="scroll-top py-10 w-10/12 mx-auto select-none" id="skills">
@@ -56,29 +54,9 @@ function Skills() {
               {t("sections.skills.subtitle1")}
             </h4>
             <article className="flex flex-wrap gap-6 lg:gap-14 justify-around items-center">
-              <SkillsCard
-                title={t("sections.skills.html")}
-                src={HTMLLogo}
-                alt="HTML"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.css")}
-                src={CssLogo}
-                alt="CSS"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.javascript")}
-                src={JavascriptLogo}
-                alt="Javascript"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.typescript")}
-                src={TypescriptLogo}
-                alt="Typescript"
-              />
+              {webSkills.map((skill, index) => (
+                <SkillsCard key={index} {...skill} />
+              ))}
             </article>
           </article>
 
