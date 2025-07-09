@@ -2,16 +2,6 @@ import { useTheme } from "../../context/ThemeContext";
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import { useTranslation } from "react-i18next";
 
-import ReactLogo from "../../assets/icons/react-logo.png";
-import AngularLogo from "../../assets/icons/angular-logo.png";
-import NodeLogo from "../../assets/icons/nodejs-logo.png";
-import ExpressLogo from "../../assets/icons/express-logo.png";
-import ExpressNegroLogo from "../../assets/icons/express-negro-logo.png";
-import SassLogo from "../../assets/icons/sass-logo.png";
-
-import TailwindLogo from "../../assets/icons/tailwindcss-logo.png";
-import BootstrapLogo from "../../assets/icons/bootstrap-logo.png";
-
 import FigmaLogo from "../../assets/icons/figma-logo.png";
 import PhotoshopLogo from "../../assets/icons/photoshop-logo.png";
 import WebflowLogo from "../../assets/icons/webflow-logo.png";
@@ -21,13 +11,18 @@ import ClickUpLogo from "../../assets/icons/clickup-logo.png";
 import NotionLogo from "../../assets/icons/notion-logo.png";
 import TrelloLogo from "../../assets/icons/trello-logo.png";
 import SkillsCard from "./SkillsCard";
-import { getDevelopmentTools, getWebSkills } from "../../data/skills";
+import {
+  getDevelopmentTools,
+  getFrameworks,
+  getWebSkills,
+} from "../../data/skills";
 
 function Skills() {
   const { t } = useTranslation();
   const { theme } = useTheme();
   const webSkills = getWebSkills(t);
   const developmentTools = getDevelopmentTools(t);
+  const frameworks = getFrameworks(t, theme);
 
   return (
     <main className="scroll-top py-10 w-10/12 mx-auto select-none" id="skills">
@@ -84,47 +79,9 @@ function Skills() {
             </h4>
 
             <article className="flex flex-wrap gap-6 lg:gap-14 justify-around items-center">
-              <SkillsCard
-                title={t("sections.skills.react")}
-                src={ReactLogo}
-                alt="React"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.angular")}
-                src={AngularLogo}
-                alt="Angular"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.sass")}
-                src={SassLogo}
-                alt="Sass"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.tailwind")}
-                src={TailwindLogo}
-                alt="Tailwind CSS"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.bootstrap")}
-                src={BootstrapLogo}
-                alt="Bootstrap"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.nodejs")}
-                src={NodeLogo}
-                alt="Node.js"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.express")}
-                src={`${theme === "dark" ? ExpressLogo : ExpressNegroLogo}`}
-                alt="Express"
-              />
+              {frameworks.map((framework, index) => (
+                <SkillsCard key={index} {...framework} />
+              ))}
             </article>
           </article>
 
