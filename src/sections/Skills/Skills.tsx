@@ -1,16 +1,12 @@
+import { useTranslation } from "react-i18next";
 import { useTheme } from "../../context/ThemeContext";
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
-import { useTranslation } from "react-i18next";
-
-import JiraLogo from "../../assets/icons/jira-logo.png";
-import ClickUpLogo from "../../assets/icons/clickup-logo.png";
-import NotionLogo from "../../assets/icons/notion-logo.png";
-import TrelloLogo from "../../assets/icons/trello-logo.png";
 import SkillsCard from "./SkillsCard";
 import {
   getDesignPrototyping,
   getDevelopmentTools,
   getFrameworks,
+  getManageTools,
   getWebSkills,
 } from "../../data/skills";
 
@@ -21,6 +17,7 @@ function Skills() {
   const developmentTools = getDevelopmentTools(t);
   const frameworks = getFrameworks(t, theme);
   const designTools = getDesignPrototyping(t);
+  const manageTools = getManageTools(t);
 
   return (
     <main className="scroll-top py-10 w-10/12 mx-auto select-none" id="skills">
@@ -109,29 +106,9 @@ function Skills() {
               {t("sections.skills.subtitle5")}
             </h4>
             <article className="flex flex-wrap gap-6 lg:gap-14 justify-around items-center">
-              <SkillsCard
-                title={t("sections.skills.jira")}
-                src={JiraLogo}
-                alt="Jira"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.clickUp")}
-                src={ClickUpLogo}
-                alt="ClickUp"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.notion")}
-                src={NotionLogo}
-                alt="Notion"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.trello")}
-                src={TrelloLogo}
-                alt="Trello"
-              />
+              {manageTools.map((tool, index) => (
+                <SkillsCard key={index} {...tool} />
+              ))}
             </article>
           </article>
         </article>
