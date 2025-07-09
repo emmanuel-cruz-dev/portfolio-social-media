@@ -8,13 +8,9 @@ import NodeLogo from "../../assets/icons/nodejs-logo.png";
 import ExpressLogo from "../../assets/icons/express-logo.png";
 import ExpressNegroLogo from "../../assets/icons/express-negro-logo.png";
 import SassLogo from "../../assets/icons/sass-logo.png";
-import GitLogo from "../../assets/icons/git-logo.png";
 
 import TailwindLogo from "../../assets/icons/tailwindcss-logo.png";
 import BootstrapLogo from "../../assets/icons/bootstrap-logo.png";
-
-import VsCodeLogo from "../../assets/icons/vscode-logo.png";
-import GithubLogo from "../../assets/icons/github-logo.png";
 
 import FigmaLogo from "../../assets/icons/figma-logo.png";
 import PhotoshopLogo from "../../assets/icons/photoshop-logo.png";
@@ -25,12 +21,13 @@ import ClickUpLogo from "../../assets/icons/clickup-logo.png";
 import NotionLogo from "../../assets/icons/notion-logo.png";
 import TrelloLogo from "../../assets/icons/trello-logo.png";
 import SkillsCard from "./SkillsCard";
-import { getWebSkills } from "../../data/skills";
+import { getDevelopmentTools, getWebSkills } from "../../data/skills";
 
 function Skills() {
   const { t } = useTranslation();
   const { theme } = useTheme();
   const webSkills = getWebSkills(t);
+  const developmentTools = getDevelopmentTools(t);
 
   return (
     <main className="scroll-top py-10 w-10/12 mx-auto select-none" id="skills">
@@ -70,23 +67,9 @@ function Skills() {
               {t("sections.skills.subtitle3")}
             </h4>
             <article className="flex flex-wrap gap-6 lg:gap-14 justify-around items-center">
-              <SkillsCard
-                title={t("sections.skills.vscode")}
-                src={VsCodeLogo}
-                alt="VS Code"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.git")}
-                src={GitLogo}
-                alt="Git"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.github")}
-                src={GithubLogo}
-                alt="GitHub"
-              />
+              {developmentTools.map((tools, index) => (
+                <SkillsCard key={index} {...tools} />
+              ))}
             </article>
           </article>
 
