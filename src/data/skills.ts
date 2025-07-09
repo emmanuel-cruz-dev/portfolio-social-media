@@ -5,7 +5,6 @@ import JavascriptLogo from "../assets/icons/javascript-logo.png";
 import TypescriptLogo from "../assets/icons/typescript-logo.png";
 
 import ReactLogo from "../assets/icons/react-logo.png";
-//import ReactNativeLogo from "../assets/icons/react-native-logo.png";
 import AngularLogo from "../assets/icons/angular-logo.png";
 import NodeLogo from "../assets/icons/nodejs-logo.png";
 import ExpressLogo from "../assets/icons/express-logo.png";
@@ -18,7 +17,7 @@ import GitLogo from "../assets/icons/git-logo.png";
 import GithubLogo from "../assets/icons/github-logo.png";
 import VsCodeLogo from "../assets/icons/vscode-logo.png";
 import IntelliJLogo from "../assets/icons/intellij-logo.png";
-//import PostmanLogo from "../assets/icons/postman-logo.png";
+import PostmanLogo from "../assets/icons/postman-logo.png";
 import InsomniaLogo from "../assets/icons/insomnia-logo.png";
 
 import FigmaLogo from "../assets/icons/figma-logo.png";
@@ -59,11 +58,6 @@ export const getFrameworks = (t: TFunction, theme: string) => [
     alt: "React",
     title: t("sections.skills.react"),
   },
-  // {
-  //   src: ReactNativeLogo,
-  //   alt: "React Native",
-  //   title: t("sections.skills.reactNative"),
-  // },
   {
     src: AngularLogo,
     alt: "Angular",
@@ -117,11 +111,11 @@ export const getDevelopmentTools = (t: TFunction) => [
     alt: "IntelliJ IDEA",
     title: t("sections.skills.intelliJ"),
   },
-  // {
-  //   src: PostmanLogo,
-  //   alt: "Postman",
-  //   title: t("sections.skills.postman"),
-  // },
+  {
+    src: PostmanLogo,
+    alt: "Postman",
+    title: t("sections.skills.postman"),
+  },
   {
     src: InsomniaLogo,
     alt: "Insomnia",
