@@ -13,12 +13,12 @@ function FlipCards() {
       id="services"
     >
       <AnimatedComponent animation="fade" delay={1}>
-        <div className="text-center mb-5">
+        <header className="text-center mb-5">
           <h2 className="font-bold text-3xl mb-4">
             {t("sections.services.title")}
           </h2>
           <h3 className="text-lg">{t("sections.services.description")}.</h3>
-        </div>
+        </header>
       </AnimatedComponent>
       <article className="flip-cards__container flex flex-col lg:flex-row justify-center items-center gap-9 text-black">
         {/* Flip Card 1 */}
