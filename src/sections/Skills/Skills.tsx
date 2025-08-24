@@ -23,12 +23,12 @@ function Skills() {
     <main className="scroll-top py-10 w-10/12 mx-auto select-none" id="skills">
       <section className="flex flex-col gap-8">
         <AnimatedComponent animation="fade" delay={1}>
-          <div className="text-center mb-5">
+          <header className="text-center mb-5">
             <h2 className="font-bold text-3xl mb-4">
               {t("sections.skills.title")}
             </h2>
             <h3 className="text-lg">{t("sections.skills.description")}</h3>
-          </div>
+          </header>
         </AnimatedComponent>
         <article className="flex justify-center items-center flex-wrap gap-8">
           {/* Desarrollo Web */}
